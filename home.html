@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNB Learning Center</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/indexbody.css">
+  <!--
+  <link rel="stylesheet" href="css/responsiveness.css">
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+      
+      .hero {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background: url('images/happiness.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+
+
+.welcome-image {
+    width: 40%;
+    height: 100%;
+    background: url('images/long hap.PNG') no-repeat center center;
+    background-size: cover;
+}
+
+
+.motto-section {
+    width: 100%;
+    height: 100vh;
+    background: url('images/happiness.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.motto-section {
+    width: 100%;
+    height: 100vh;
+    background: url('images/happiness.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.motto-content {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.6); /* Dark background for readability */
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.scrolled .motto-section {
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+
+
+
+/* ... (other CSS styles) ... */
+
+.motto-section.scrolled {
+    opacity: 1; /* Make visible when scrolled */
+}
+
+.motto-section.hidden {
+    display: none; /* Hide when needed */
+}
+
+.welcome {
+    display: flex; /* Arrange the divs inside */
+}
+
+.welcome-content {
+    width: 60%; /* Give the content some width */
+    padding: 20px;
+}
+
+
+
+.transition-button {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.1); /* Slight transparency to blend sections */
+}
+
+.strategy-link {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 165, 0, 0.9); /* Slightly transparent orange */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.strategy-link:hover {
+    background: rgba(255, 140, 0, 1); /* Darker orange on hover */
+}
+
+
+.achievements-section {
+    width: 100%;
+    height: 100vh;
+    background: url('images/bnb 14.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.achievements-content {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.6); /* Dark background for text readability */
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ======================= */
+/* ZOOM-OUT SCROLL ANIMATION */
+/* ======================= */
+
+.zoom-out {
+    opacity: 0;
+    transform: scale(0.8); /* Starts smaller */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.zoom-active {
+    opacity: 1;
+    transform: scale(1); /* Grows to normal size */
+}
+
+
+
+  </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="nav-top">
+            <div class="nav-left">
+                <img src="images/logo.jpg" alt="BNB Logo">
+                BNB Learning Center
+            </div>
+    
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle">&#9776;</div>
+    
+            <div class="nav-right">
+                <div class="dropdown">
+                    <a href="#">About BNB</a>
+                    <div class="dropdown-menu">
+                        <a href="#">History</a>
+                        <a href="#">Leadership</a>
+                        <a href="#">Governance</a>
+                        <a href="#">Milestones</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Strategy 2034</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Goals & Objectives</a>
+                        <a href="#">New & Exciting</a>
+                        <a href="#">4D Model</a>
+                        <a href="#">Opportunities</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Academics & Innovation</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Vision & Mission</a>
+                        <a href="#">Digital Learning</a>
+                        <a href="#">Teacher Training</a>
+                        <a href="#">Reading Culture</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Community & Support</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Happy Classroom</a>
+                        <a href="#">Partnerships</a>
+                        <a href="#">Student Support</a>
+                        <a href="#">Financial Sustainability</a>
+                    </div>
+                </div>
+                <div class="login-button">
+                    <a href="#">Portal Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+  
+
+  <section class="hero   zoom-out">
+    <div class="hero-content">
+        <img src="images/pan6.png" alt="BNB Banner" class="banner">
+      <h1>Building Responsible Global Citizens</h1>
+      <p>Shaping the future through quality education and innovation.</p>
+      <a href="about.html" class="hero-btn">Learn More</a>
+    </div>
+  </section>
+
+  <section class="welcome  zoom-out">
+    <div class="welcome-image"></div>
+    <div class="welcome-content">
+        <h1>Welcome to BNB Learning Center</h1>
+        <p>At BNB Learning Center, we believe in nurturing young minds through innovation, dedication, and a commitment to excellence. Our learning environment fosters curiosity, creativity, and critical thinking, ensuring that every student reaches their full potential. With a strong emphasis on both academic growth and character development, we prepare students to excel in an ever-evolving world. Our passionate educators and advanced learning resources create a dynamic space where knowledge meets opportunity. Join us on a journey of discovery, empowerment, and lifelong learning.</p>
+        <a href="achievements.html" class="explore-btn">Explore</a>
+    </div>
+</section>
+
+
+
+<section class="motto-section ">
+    <div class="motto-content">
+        <h2>We Build the Future with Knowledge and Integrity</h2>
+    </div>
+</section>
+
+
+<div class="transition-button   zoom-out">
+    <a href="strategy2023.html" class="strategy-link">See Our Strategy 2023</a>
+</div>
+
+
+
+
+<!-- Achievements Section (Now Uses New Background) -->
+<section class="achievements-section  ">
+    <div class="achievements-content">
+        <h2>Our Achievements</h2>
+        <p>Celebrating success and excellence. Achievements coming soon...</p>
+    </div>
+</section>
+
+
+
+<section class="quick-links  zoom-out">
+    <h2>Want to know more about</h2>
+    <div class="links-container">
+        <a href="history.html" class="quick-link">Our History</a>
+        <a href="goals.html" class="quick-link">Our Goals & Objectives</a>
+        <a href="4d-model.html" class="quick-link">The 4D Model</a>
+        <a href="student-support.html" class="quick-link">Student Support</a>
+        <a href="partnership.html" class="quick-link">Partnership</a>
+        <a href="innovation.html" class="quick-link">Innovation & Excellence</a>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Column 1: Contact Info -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>BNB Learning Center</p>
+            <p>Email: info@bnblearning.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Learning Ave, Education City</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="history.html">Our History</a></li>
+                <li><a href="goals.html">Goals & Objectives</a></li>
+                <li><a href="4d-model.html">The 4D Model</a></li>
+                <li><a href="student-support.html">Student Support</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Social Media -->
+<div class="footer-column">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>
+
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 BNB Learning Center. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--NAvigation Script-->
+
+  <script>
+    window.onload = function() {
+      document.querySelector('.nav-container').classList.add('show');
+    };
+  </script>
+
+
+<script>
+    document.addEventListener("scroll", function () {
+        var mottoSection = document.querySelector(".motto-section");
+        var welcomeSection = document.querySelector(".welcome");
+
+        var welcomeHeight = welcomeSection.offsetHeight;
+        var scrollPosition = window.scrollY;
+
+        if (scrollPosition > welcomeHeight) {
+            mottoSection.classList.add("scrolled");
+        } else {
+            mottoSection.classList.remove("scrolled");
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const zoomElements = document.querySelectorAll(".zoom-out");
+
+        function checkZoomIn() {
+            const triggerBottom = window.innerHeight * 0.85; // Adjust trigger point
+
+            zoomElements.forEach((element) => {
+                const elementTop = element.getBoundingClientRect().top;
+
+                if (elementTop < triggerBottom) {
+                    element.classList.add("zoom-active");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", checkZoomIn);
+        checkZoomIn(); // Run on page load
+    });
+</script>
+
+<!--
+<script>
+    // Toggle Mobile Menu
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navRight = document.querySelector(".nav-right");
+
+        menuToggle.addEventListener("click", function () {
+            navRight.style.display = navRight.style.display === "flex" ? "none" : "flex";
+        });
+    });
+</script>
+-->
+
+
+</body>
+</html>

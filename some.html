@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seamless Background Transition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background Layer (Changes when covered) */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: url('images/bnb 14.jpg') no-repeat center center/cover;
+            z-index: -1;
+            transition: background 0.5s ease-in-out;
+        }
+
+        /* Full Screen Sections */
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Welcome Section (Covers the Background Change) */
+        .welcome {
+            background: white;
+            color: black;
+            height: 120vh; /* Slightly taller to fully cover the transition */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 50px;
+        }
+
+        /* Achievements Section (Uses New Background) */
+        .achievements {
+            background: transparent; /* Still uses the body's background */
+        }
+
+        /* JavaScript class to change background */
+        .bg-change {
+            background: url('images/long hap.png') no-repeat center center/cover !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Layer (Changes Behind Sections) -->
+    <div class="background"></div>
+
+    <!-- Hero Section (First Background) -->
+    <section class="hero">
+        Welcome to <br> <span style="color: orange;">BNB Learning Center</span>
+    </section>
+
+    <!-- Covering Section (Ensures a Hidden Transition) -->
+    <section class="welcome">
+        <h1>Welcome to BNB</h1>
+        <p>We are committed to excellence in education.</p>
+    </section>
+
+    <!-- Achievements Section (Appears with the New Background) -->
+    <section class="achievements">
+        <h1>Our Achievements</h1>
+        <p>Celebrating 25 years of excellence!</p>
+    </section>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const welcomeSection = document.querySelector(".welcome");
+            const background = document.querySelector(".background");
+            const rect = welcomeSection.getBoundingClientRect();
+
+            if (rect.top <= 0) {
+                background.classList.add("bg-change"); // Change background when covered
+            } else {
+                background.classList.remove("bg-change"); // Reset background when scrolling back up
+            }
+        });
+    </script>
+
+</body>
+</html>

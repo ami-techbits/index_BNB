@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNB Learning Center - Achievements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .circle-container {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            margin: auto;
+        }
+        .center-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .achievement {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background: #0073e6;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .achievement:hover {
+            transform: scale(1.1);
+            background: #005bb5;
+        }
+        
+        /* Positioning Each Achievement Around the Circle */
+        .a1 { top: 10%; left: 50%; transform: translateX(-50%); }
+        .a2 { top: 25%; right: 10%; }
+        .a3 { top: 50%; right: 2%; transform: translateY(-50%); }
+        .a4 { bottom: 25%; right: 10%; }
+        .a5 { bottom: 10%; left: 50%; transform: translateX(-50%); }
+        .a6 { bottom: 25%; left: 10%; }
+        .a7 { top: 50%; left: 2%; transform: translateY(-50%); }
+        .a8 { top: 25%; left: 10%; }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+
+    <div class="circle-container">
+        <!-- Center Logo & Title -->
+        <div class="center-content bg-white shadow-lg rounded-full p-6 w-48 h-48 flex flex-col justify-center items-center">
+            <img src="https://via.placeholder.com/80" alt="BNB Logo" class="mb-2">
+            <h2 class="text-xl font-bold text-gray-800">BNB Learning Center</h2>
+            <p class="text-sm text-gray-600">Achievements at a Glance</p>
+        </div>
+
+        <!-- Achievements -->
+        <div class="achievement a1">25 Years of Excellence</div>
+        <div class="achievement a2">78% University Entrance Rate</div>
+        <div class="achievement a3">2,250+ Students Enrolled</div>
+        <div class="achievement a4">150+ Dedicated Teachers</div>
+        <div class="achievement a5">Cutting-Edge Digital Learning</div>
+        <div class="achievement a6">State-of-the-Art 2-Hectare Campus</div>
+        <div class="achievement a7">A Happy & Inclusive Community</div>
+        <div class="achievement a8">Recognized for Academic & Moral Excellence</div>
+    </div>
+
+</body>
+</html>

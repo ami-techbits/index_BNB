@@ -1,0 +1,148 @@
+/* ======================= */
+/* RESPONSIVE DESIGN */
+/* ======================= */
+
+/* General adjustments */
+body {
+    font-size: 16px;
+}
+
+/* Responsive Navbar */
+.nav-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #222;
+    padding: 10px 20px;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left img {
+    height: 50px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Welcome Section */
+.welcome {
+    flex-direction: column;
+    text-align: center;
+}
+
+.welcome-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+}
+
+.welcome-content {
+    width: 90%;
+    padding: 20px;
+}
+
+/* Motto Section */
+.motto-content {
+    font-size: 1.8rem;
+}
+
+/* Quick Links */
+.links-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer */
+.footer-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* ======================= */
+/* MOBILE RESPONSIVENESS */
+/* ======================= */
+
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    .nav-right {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-right a {
+        display: block;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Sections */
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .motto-content {
+        font-size: 1.5rem;
+    }
+
+    .links-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

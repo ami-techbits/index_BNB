@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+  }
+
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    position: fixed;
+    z-index: 100; /* Ensure it's above other elements */
+  }
+
+  .nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+  }
+
+  .nav-left {
+    width: 31%;
+    background-color: green;
+    color: rgb(223, 173, 11);
+    font-size: 2.5rem;
+    font-weight: bold;
+    transform: translateX(-100%);
+    height: 100px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% + 20px));
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+  }
+  
+  .nav-left img {
+    height: 90px;
+    border-radius: 45px;
+  }
+
+  .nav-right {
+    width: 66%;
+    background-color: orange;
+    justify-content: flex-end;
+    gap: 20px;
+    transform: translateX(100%);
+    height: 100px;
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);*/
+    overflow:visible; /* Ensure dropdown can extend outside */
+  }
+
+  .nav-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+
+  /* Dropdown Styling */
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(102, 102, 98, 0.9);
+    min-width: 200px;
+    z-index: 1000;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(238, 238, 234, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  .dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: rgb(236, 203, 12);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .dropdown-menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Fix Dropdown Visibility */
+  .dropdown:hover .dropdown-menu,
+  .dropdown:focus-within .dropdown-menu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* Show animation */
+  .show .nav-left {
+    transform: translateX(0);
+  }
+
+  .show .nav-right {
+    transform: translateX(0);
+  }
+
+  /* Login Button */
+  .login-button {
+    margin-left: auto;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .login-button a {
+    text-decoration: none;
+    color: orange;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .login-button:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+
+  
+
+
+
+  .footer {
+    background: #222;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    width: 30%;
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-column p, .footer-column ul {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: orange;
+}
+
+/* Social Media Icons */
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+/* Copyright Section */
+.footer-bottom {
+    background: #111;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+}
+
+.social-icons a {
+    font-size: 1.8rem;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: orange;
+}
+
+
+/* Copyright Section */
+.footer-bottom {
+    background: #111; /* Dark background */
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #bbb; /* Light gray text */
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle top border */
+    width: 100%;
+}
+
+.footer-bottom p {
+    margin: 0;
+    letter-spacing: 0.5px;
+}
