@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNB Learning Center</title>
+ 
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/indexbody.css">
+  <!--
+  <link rel="stylesheet" href="css/responsiveness.css">
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+
+    /* ======================= */
+/* HERO SECTION */
+/* ======================= */
+
+
+/* ======================= */
+/* TEACHER TRAINING HERO SECTION */
+/* ======================= */
+/* ======================= */
+/* TEACHER TRAINING HERO SECTION */
+/* ======================= */
+
+.teacher-hero {
+    width: 100%;
+    height: 80vh;
+    background: url('images/teachers.JPG') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.teacher-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    top: 0;
+    left: 0;
+}
+
+.teacher-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.teacher-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.teacher-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ======================= */
+/* TEACHER TRAINING OVERVIEW SECTION */
+/* ======================= */
+
+.teacher-overview {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 165, 0, 0.1); /* Light orange transparent background */
+    border-left: 5px solid orange;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-overview h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.teacher-overview p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ======================= */
+/* TEACHER TRAINING SECTIONS */
+/* ======================= */
+
+.teacher-sections {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Teacher Training Cards */
+.teacher-box {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid orange;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.teacher-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.teacher-box h3 {
+    font-size: 1.8rem;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.teacher-box p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ======================= */
+/* HOW TO SUPPORT TEACHERS SECTION */
+/* ======================= */
+
+.support-teachers {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 165, 0, 0.1);
+    border-radius: 8px;
+    border-left: 5px solid orange;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.support-teachers h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.support-teachers ul {
+    list-style: none;
+    padding: 0;
+}
+
+.support-teachers ul li {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.support-teachers ul li::before {
+    content: "✔";
+    color: orange;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .teacher-box {
+        width: 100%;
+    }
+
+    .teacher-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .teacher-box p {
+        font-size: 1rem;
+    }
+
+    .teacher-overview,
+    .support-teachers {
+        padding: 30px;
+    }
+
+    .teacher-overview h2,
+    .support-teachers h2 {
+        font-size: 2rem;
+    }
+
+    .teacher-overview p,
+    .support-teachers ul li {
+        font-size: 1.1rem;
+    }
+}
+
+
+  </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="nav-top">
+            <div class="nav-left">
+                <a href="index.html" class="home-button">
+                    <img src="images/logo.jpg" alt="BNB Logo">
+                    BNB Learning Center
+                </a>
+            </div>
+    
+    
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle"></div>
+    
+            <div class="nav-right">
+                <div class="dropdown">
+                    <a href="about.html">About BNB</a>
+                    <div class="dropdown-menu">
+                        <a href="history.html">History</a>
+                        <a href="leadership.html">Leadership</a>
+                        <a href="governance.html">Governance</a>
+                        <a href="milestone.html">Milestones</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="strategy.html">Strategy 2034</a>
+                    <div class="dropdown-menu">
+                        <a href="goals.html">Goals & Objectives</a>
+                        <a href="#">New & Exciting</a>
+                        <a href="4d.html">4D Model</a>
+                        <a href="opportunities.html">Opportunities</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="academics.html">Academics & Innovation</a>
+                    <div class="dropdown-menu">
+                        <a href="vission.html">Vision & Mission</a>
+                        <a href="digit.html">Digital Learning</a>
+                        <a href="teachers.html">Teacher Training</a>
+                        <a href="reading.html">Reading Culture</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="community.html">Community & Support</a>
+                    <div class="dropdown-menu">
+                        <a href="happy.html">Happy Classroom</a>
+                        <a href="partnership.html">Partnerships</a>
+                        <a href="support.html">Student Support</a>
+                        <a href="finance.html">Financial Sustainability</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="login-button">
+                    <a href="login.html">Portal Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    
+
+
+
+<!-- Teacher Training Hero Section -->
+<section class="teacher-hero">
+    <div class="teacher-overlay"></div>
+    <div class="teacher-content">
+        <h1>Teacher Training at BNB Learning Center</h1>
+        <p>Empowering educators for excellence.</p>
+    </div>
+</section>
+
+<!-- Teacher Training Overview -->
+<section class="teacher-overview">
+    <h2>Empowering Educators for Excellence</h2>
+    <p>BNB Learning Center believes that <strong>quality education starts with well-trained teachers</strong>. 
+       The institution has developed a <strong>comprehensive teacher training program</strong> focused on 
+       <strong>modern teaching methods, digital learning, and leadership development</strong>. Through 
+       <strong>continuous professional development and mentorship</strong>, BNB ensures that its educators remain 
+       <strong>highly skilled, innovative, and effective</strong> in shaping the future of students.</p>
+</section>
+
+<!-- Teacher Training Sections -->
+<section class="teacher-sections">
+    <div class="teacher-box">
+        <h3>1. BNB as a Laboratory School for Teacher Training 🎓</h3>
+        <p><strong>A Hands-On Training Model:</strong></p>
+        <ul>
+            <li>✔ BNB is transforming into a <strong>"Laboratory School"</strong>, allowing teachers to apply 
+                <strong>theory in real classroom settings</strong>.</li>
+            <li>✔ Trainee teachers <strong>observe, practice, and refine</strong> their teaching strategies under expert guidance.</li>
+            <li>✔ Emphasis on <strong>interactive, student-centered learning approaches</strong>.</li>
+        </ul>
+        <p>🚀 <strong>Impact:</strong></p>
+        <ul>
+            <li>✅ Enhances <strong>practical teaching skills</strong>.</li>
+            <li>✅ Builds <strong>confident and effective educators</strong>.</li>
+            <li>✅ Creates a <strong>mentorship-driven teaching environment</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="teacher-box">
+        <h3>2. Professional Development & Continuous Learning 📚</h3>
+        <p><strong>Regular Training Programs for Teachers:</strong></p>
+        <ul>
+            <li>✔ Conducting <strong>monthly and annual workshops</strong> on the latest teaching strategies.</li>
+            <li>✔ Offering <strong>online professional development courses</strong> to keep teachers updated.</li>
+            <li>✔ Providing <strong>certification programs</strong> to encourage lifelong learning.</li>
+        </ul>
+        <p>🚀 <strong>Impact:</strong></p>
+        <ul>
+            <li>✅ Keeps teachers <strong>updated with global education trends</strong>.</li>
+            <li>✅ Improves <strong>classroom management and instructional methods</strong>.</li>
+            <li>✅ Ensures <strong>high teaching standards and student engagement</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="teacher-box">
+        <h3>3. Digital Literacy & Technology Training 💻</h3>
+        <p><strong>Preparing Teachers for 21st-Century Classrooms:</strong></p>
+        <ul>
+            <li>✔ Training educators to use <strong>smartboards, e-learning platforms, and AI-powered teaching tools</strong>.</li>
+            <li>✔ Introducing <strong>coding and digital assessment methods</strong> into lesson plans.</li>
+            <li>✔ Helping teachers <strong>design interactive online lessons</strong> to engage students.</li>
+        </ul>
+        <p>🚀 <strong>Impact:</strong></p>
+        <ul>
+            <li>✅ Improves <strong>digital competency among teachers</strong>.</li>
+            <li>✅ Enhances <strong>technology-driven instruction</strong>.</li>
+            <li>✅ Prepares students for <strong>digital careers and remote learning environments</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="teacher-box">
+        <h3>4. Leadership & Mentorship Programs 🏆</h3>
+        <p><strong>Developing Future Education Leaders:</strong></p>
+        <ul>
+            <li>✔ Encouraging teachers to take <strong>leadership roles</strong> in curriculum design and school improvement.</li>
+            <li>✔ Creating a <strong>mentorship program</strong> where senior educators guide junior teachers.</li>
+            <li>✔ Providing <strong>career growth opportunities</strong>, such as teacher coaching and administrative training.</li>
+        </ul>
+        <p>🚀 <strong>Impact:</strong></p>
+        <ul>
+            <li>✅ Builds <strong>strong leadership skills among educators</strong>.</li>
+            <li>✅ Creates a <strong>culture of collaboration and mentorship</strong>.</li>
+            <li>✅ Enhances <strong>teacher retention and job satisfaction</strong>.</li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+    
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Column 1: Contact Info -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>BNB Learning Center</p>
+            <p>Email: info@bnblearning.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Learning Ave, Education City</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="history.html">Our History</a></li>
+                <li><a href="goals.html">Goals & Objectives</a></li>
+                <li><a href="4d-model.html">The 4D Model</a></li>
+                <li><a href="student-support.html">Student Support</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Social Media -->
+<div class="footer-column">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>
+
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 BNB Learning Center. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--NAvigation Script-->
+
+  <script>
+    window.onload = function() {
+      document.querySelector('.nav-container').classList.add('show');
+    };
+  </script>
+
+
+
+
+</body>
+</html>

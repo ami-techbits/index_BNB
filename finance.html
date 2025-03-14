@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNB Learning Center</title>
+ 
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/indexbody.css">
+  <!--
+  <link rel="stylesheet" href="css/responsiveness.css">
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+
+    /* ======================= */
+/* HERO SECTION */
+/* ======================= */
+
+/* ======================= */
+/* FINANCIAL STABILITY HERO SECTION */
+/* ======================= */
+/* ======================= */
+/* FINANCIAL STABILITY HERO SECTION */
+/* ======================= */
+
+.finance-hero {
+    width: 100%;
+    height: 80vh;
+    background: url('images/happiness.JPG') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.finance-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    top: 0;
+    left: 0;
+}
+
+.finance-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(20, 20, 20, 0.8); /* Semi-transparent orange */
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.finance-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.finance-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ======================= */
+/* FINANCIAL STABILITY OVERVIEW SECTION */
+/* ======================= */
+
+.finance-overview {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 165, 0, 0.1); /* Light orange transparent background */
+    border-left: 5px solid orange;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.finance-overview h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.finance-overview p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ======================= */
+/* FINANCIAL STABILITY SECTIONS */
+/* ======================= */
+
+.finance-sections {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Finance Cards */
+.finance-box {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid orange;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.finance-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.finance-box h3 {
+    font-size: 1.8rem;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.finance-box p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.finance-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.finance-box ul li {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.finance-box ul li::before {
+    content: "✔";
+    color: orange;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .finance-box {
+        width: 100%;
+    }
+
+    .finance-overview {
+        padding: 30px;
+    }
+
+    .finance-overview h2 {
+        font-size: 2rem;
+    }
+
+    .finance-overview p {
+        font-size: 1.1rem;
+    }
+
+    .finance-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .finance-box p,
+    .finance-box ul li {
+        font-size: 1.1rem;
+    }
+}
+
+
+  </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="nav-top">
+            <div class="nav-left">
+                <a href="index.html" class="home-button">
+                    <img src="images/logo.jpg" alt="BNB Logo">
+                    BNB Learning Center
+                </a>
+            </div>
+    
+    
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle"></div>
+    
+            <div class="nav-right">
+                <div class="dropdown">
+                    <a href="about.html">About BNB</a>
+                    <div class="dropdown-menu">
+                        <a href="history.html">History</a>
+                        <a href="leadership.html">Leadership</a>
+                        <a href="governance.html">Governance</a>
+                        <a href="milestone.html">Milestones</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="strategy.html">Strategy 2034</a>
+                    <div class="dropdown-menu">
+                        <a href="goals.html">Goals & Objectives</a>
+                        <a href="#">New & Exciting</a>
+                        <a href="4d.html">4D Model</a>
+                        <a href="opportunities.html">Opportunities</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="academics.html">Academics & Innovation</a>
+                    <div class="dropdown-menu">
+                        <a href="vission.html">Vision & Mission</a>
+                        <a href="digit.html">Digital Learning</a>
+                        <a href="teachers.html">Teacher Training</a>
+                        <a href="reading.html">Reading Culture</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="community.html">Community & Support</a>
+                    <div class="dropdown-menu">
+                        <a href="happy.html">Happy Classroom</a>
+                        <a href="partnership.html">Partnerships</a>
+                        <a href="support.html">Student Support</a>
+                        <a href="finance.html">Financial Sustainability</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="login-button">
+                    <a href="login.html">Portal Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+<!-- Financial Stability Hero Section -->
+<section class="finance-hero">
+    <div class="finance-overlay"></div>
+    <div class="finance-content">
+        <h1>Financial Stability at BNB Learning Center</h1>
+        <p>Building a sustainable future for quality education.</p>
+    </div>
+</section>
+
+<!-- Financial Stability Overview -->
+<section class="finance-overview">
+    <h2>Building a Sustainable Future for Quality Education</h2>
+    <p>BNB Learning Center is committed to <strong>financial sustainability</strong> to ensure <strong>long-term growth, high-quality education, and continuous innovation</strong>. 
+       Through <strong>strategic financial planning, diversified revenue streams, and responsible budgeting</strong>, BNB maintains <strong>stability while expanding opportunities for students and educators</strong>.</p>
+</section>
+
+<!-- Financial Stability Sections -->
+<section class="finance-sections">
+    <div class="finance-box">
+        <h3>1. Diversified Revenue Streams 💰</h3>
+        <p><strong>Ensuring Steady Financial Growth:</strong></p>
+        <ul>
+            <li>✔ <strong>Student Tuition & Fees</strong> – The primary source of funding for school operations.</li>
+            <li>✔ <strong>Corporate & Business Partnerships</strong> – Sponsorships and financial aid from private-sector collaborations.</li>
+            <li>✔ <strong>Alumni Contributions & Endowments</strong> – Support from past graduates for scholarships and development projects.</li>
+            <li>✔ <strong>Government & NGO Grants</strong> – Funding from educational programs and public-private partnerships.</li>
+            <li>✔ <strong>Teacher Training & Consultancy Services</strong> – Offering professional development programs to generate additional revenue.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Ensures <strong>long-term financial independence and flexibility</strong>.</p>
+    </div>
+
+    <div class="finance-box">
+        <h3>2. Cost-Effective Resource Management 📊</h3>
+        <p><strong>Optimizing Expenses While Maintaining Quality:</strong></p>
+        <ul>
+            <li>✔ Implementing <strong>efficient budgeting systems</strong> to control operational costs.</li>
+            <li>✔ Utilizing <strong>digital learning resources</strong> to reduce material expenses.</li>
+            <li>✔ Investing in <strong>renewable energy and cost-saving infrastructure</strong> to minimize recurring costs.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Maintains <strong>financial health while sustaining educational excellence</strong>.</p>
+    </div>
+
+    <div class="finance-box">
+        <h3>3. Scholarship & Financial Aid Programs 🎓</h3>
+        <p><strong>Providing Access to Education While Maintaining Stability:</strong></p>
+        <ul>
+            <li>✔ Balancing <strong>affordable tuition</strong> with <strong>strong financial aid programs</strong>.</li>
+            <li>✔ Encouraging <strong>corporate sponsors and donors</strong> to support student scholarships.</li>
+            <li>✔ Establishing <strong>a long-term scholarship fund</strong> for underprivileged students.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Expands access to <strong>quality education without financial strain</strong> on the institution.</p>
+    </div>
+
+    <div class="finance-box">
+        <h3>4. Investment in School Growth & Expansion 🏫</h3>
+        <p><strong>Financial Planning for Infrastructure & Innovation:</strong></p>
+        <ul>
+            <li>✔ Investing in <strong>campus expansion, modern facilities, and technology-driven education</strong>.</li>
+            <li>✔ Planning for <strong>long-term sustainability by reinvesting surplus funds into school improvements</strong>.</li>
+            <li>✔ Ensuring <strong>financial reserves for unexpected challenges or economic shifts</strong>.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Supports <strong>future growth while maintaining financial security</strong>.</p>
+    </div>
+
+    <div class="finance-box">
+        <h3>5. Transparent Financial Governance & Accountability 📑</h3>
+        <p><strong>Ensuring Financial Integrity & Sustainability:</strong></p>
+        <ul>
+            <li>✔ Implementing <strong>strict financial oversight</strong> to ensure transparency.</li>
+            <li>✔ Conducting <strong>regular audits and financial assessments</strong>.</li>
+            <li>✔ Engaging a <strong>financial management team</strong> to oversee budgeting and investments.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Builds <strong>trust among stakeholders and ensures financial accountability</strong>.</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+    
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Column 1: Contact Info -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>BNB Learning Center</p>
+            <p>Email: info@bnblearning.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Learning Ave, Education City</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="history.html">Our History</a></li>
+                <li><a href="goals.html">Goals & Objectives</a></li>
+                <li><a href="4d-model.html">The 4D Model</a></li>
+                <li><a href="student-support.html">Student Support</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Social Media -->
+<div class="footer-column">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>
+
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 BNB Learning Center. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--NAvigation Script-->
+
+  <script>
+    window.onload = function() {
+      document.querySelector('.nav-container').classList.add('show');
+    };
+  </script>
+
+
+
+
+</body>
+</html>

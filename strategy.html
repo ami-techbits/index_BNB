@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNB Learning Center</title>
+ 
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/indexbody.css">
+  <!--
+  <link rel="stylesheet" href="css/responsiveness.css">
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+
+    /* ======================= */
+/* HERO SECTION */
+/* ======================= */
+/* ======================= */
+/* STRATEGY HERO SECTION */
+/* ======================= */
+
+.strategy-hero {
+    width: 100%;
+    height: 80vh;
+    background: url('images/teachers.JPG') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.strategy-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    top: 0;
+    left: 0;
+}
+
+.strategy-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.strategy-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.strategy-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ======================= */
+/* STRATEGY OVERVIEW SECTION */
+/* ======================= */
+
+.strategy-overview {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 165, 0, 0.1); /* Light orange transparent background */
+    border-left: 5px solid orange;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.strategy-overview h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.strategy-overview p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ======================= */
+/* STRATEGY KEY SECTIONS */
+/* ======================= */
+
+.strategy-sections {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Strategy Cards */
+.strategy-box {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid orange;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.strategy-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.strategy-box h3 {
+    font-size: 1.8rem;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.strategy-box p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+/* ======================= */
+/* WHY STRATEGY SECTION */
+/* ======================= */
+
+.strategy-reason {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 165, 0, 0.1); /* Light orange transparent background */
+    border-left: 5px solid orange;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.strategy-reason h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.strategy-reason ul {
+    list-style: none;
+    padding: 0;
+}
+
+.strategy-reason ul li {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.strategy-reason ul li::before {
+    content: "✔";
+    color: orange;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* ======================= */
+/* KEY PILLARS SECTION */
+/* ======================= */
+
+.strategy-pillars {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Strategy Pillars */
+.pillar-box {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid orange;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.pillar-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pillar-box h3 {
+    font-size: 1.8rem;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.pillar-box p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .pillar-box {
+        width: 100%;
+    }
+
+    .pillar-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .pillar-box p {
+        font-size: 1rem;
+    }
+
+    .strategy-reason {
+        padding: 30px;
+    }
+
+    .strategy-reason h2 {
+        font-size: 2rem;
+    }
+
+    .strategy-reason ul li {
+        font-size: 1.1rem;
+    }
+}
+
+/* ======================= */
+/* IMPLEMENTATION PLAN */
+/* ======================= */
+
+.strategy-implementation {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 165, 0, 0.1);
+    border-radius: 8px;
+    border-left: 5px solid orange;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.strategy-implementation h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .strategy-box {
+        width: 100%;
+    }
+
+    .strategy-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .strategy-box p {
+        font-size: 1rem;
+    }
+
+    .strategy-overview,
+    .strategy-implementation {
+        padding: 30px;
+    }
+
+    .strategy-overview h2,
+    .strategy-implementation h2 {
+        font-size: 2rem;
+    }
+
+    .strategy-overview p,
+    .strategy-implementation p {
+        font-size: 1.1rem;
+    }
+}
+
+
+  </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="nav-top">
+            <div class="nav-left">
+                <a href="index.html" class="home-button">
+                    <img src="images/logo.jpg" alt="BNB Logo">
+                    BNB Learning Center
+                </a>
+            </div>
+    
+    
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle"></div>
+    
+            <div class="nav-right">
+                <div class="dropdown">
+                    <a href="about.html">About BNB</a>
+                    <div class="dropdown-menu">
+                        <a href="history.html">History</a>
+                        <a href="leadership.html">Leadership</a>
+                        <a href="governance.html">Governance</a>
+                        <a href="milestone.html">Milestones</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="strategy.html">Strategy 2034</a>
+                    <div class="dropdown-menu">
+                        <a href="goals.html">Goals & Objectives</a>
+                        <a href="#">New & Exciting</a>
+                        <a href="4d.html">4D Model</a>
+                        <a href="opportunities.html">Opportunities</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="academics.html">Academics & Innovation</a>
+                    <div class="dropdown-menu">
+                        <a href="vission.html">Vision & Mission</a>
+                        <a href="digit.html">Digital Learning</a>
+                        <a href="teachers.html">Teacher Training</a>
+                        <a href="reading.html">Reading Culture</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="community.html">Community & Support</a>
+                    <div class="dropdown-menu">
+                        <a href="happy.html">Happy Classroom</a>
+                        <a href="partnership.html">Partnerships</a>
+                        <a href="support.html">Student Support</a>
+                        <a href="finance.html">Financial Sustainability</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="login-button">
+                    <a href="login.html">Portal Login</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+   
+    
+
+
+
+
+
+<!-- Strategy Hero Section -->
+<section class="strategy-hero">
+    <div class="strategy-overlay"></div>
+    <div class="strategy-content">
+        <h1>BNB Learning Center: Strategy 2024-2034</h1>
+        <p>A visionary roadmap for educational excellence.</p>
+    </div>
+</section>
+
+<!-- Strategy Overview -->
+<section class="strategy-overview">
+    <h2>A Visionary Roadmap for Educational Excellence</h2>
+    <p>BNB Learning Center’s <strong>Strategy 2024-2034</strong> is a <strong>transformative plan</strong> designed to <strong>elevate education standards, strengthen governance, and empower students for global success</strong>. 
+       Built on the <strong>4D Model</strong>—<strong>Discover, Dream, Design, and Deliver</strong>—this strategy ensures <strong>structured growth, innovation, and sustainability</strong> in an ever-evolving educational landscape.</p>
+</section>
+
+<!-- Why Strategy Section -->
+<section class="strategy-reason">
+    <h2>Why Strategy 2034?</h2>
+    <ul>
+        <li>✔ Adapt to <strong>changing educational needs</strong> 📚</li>
+        <li>✔ Ensure <strong>financial sustainability</strong> 💰</li>
+        <li>✔ Integrate <strong>technology-driven learning</strong> 💻</li>
+        <li>✔ Enhance <strong>teacher training & student support</strong> 🎓</li>
+        <li>✔ Strengthen <strong>community partnerships & governance</strong> 🤝</li>
+    </ul>
+</section>
+
+<!-- Key Pillars Section -->
+<section class="strategy-pillars">
+    <h2>Key Pillars of the Strategy</h2>
+
+    <div class="pillar-box">
+        <h3>🔹 Academic Excellence & Student Success</h3>
+        <p>✔ Improve <strong>teaching methodologies & curriculum</strong>.</p>
+        <p>✔ Ensure an <strong>85%+ university entrance exam pass rate</strong>.</p>
+        <p>✔ Integrate <strong>reading culture & digital learning</strong>.</p>
+    </div>
+
+    <div class="pillar-box">
+        <h3>🔹 Teacher Training & Development</h3>
+        <p>✔ Establish <strong>BNB as a Laboratory School</strong> for hands-on teacher training.</p>
+        <p>✔ Launch a <strong>Teacher Training College</strong> to develop future educators.</p>
+        <p>✔ Conduct <strong>continuous professional development programs</strong>.</p>
+    </div>
+
+    <div class="pillar-box">
+        <h3>🔹 Infrastructure Growth & Digital Innovation</h3>
+        <p>✔ Expand <strong>campus facilities, labs, and smart classrooms</strong>.</p>
+        <p>✔ Introduce <strong>e-learning platforms & advanced STEM education</strong>.</p>
+        <p>✔ Build a <strong>state-of-the-art library & student resource center</strong>.</p>
+    </div>
+
+    <div class="pillar-box">
+        <h3>🔹 Governance & Leadership Enhancement</h3>
+        <p>✔ Strengthen <strong>Board of Directors’ oversight & decision-making</strong>.</p>
+        <p>✔ Implement <strong>data-driven financial management & strategic planning</strong>.</p>
+        <p>✔ Foster <strong>inclusive leadership & stakeholder collaboration</strong>.</p>
+    </div>
+
+    <div class="pillar-box">
+        <h3>🔹 Community Engagement & Global Partnerships</h3>
+        <p>✔ Expand <strong>local business collaborations</strong> to fund scholarships & internships.</p>
+        <p>✔ Strengthen <strong>alumni networks for mentorship & financial aid</strong>.</p>
+        <p>✔ Establish <strong>international student exchange programs</strong>.</p>
+    </div>
+</section>
+
+<!-- Implementation Plan -->
+<section class="strategy-implementation">
+    <h2>Implementation & Monitoring</h2>
+    <p>📌 <strong>2024-2026:</strong> <strong>Foundation Phase</strong> – Strengthening governance, teacher training, and digital learning.</p>
+    <p>📌 <strong>2027-2029:</strong> <strong>Growth Phase</strong> – Expanding student population, infrastructure, and global outreach.</p>
+    <p>📌 <strong>2030-2034:</strong> <strong>Sustainability Phase</strong> – Ensuring long-term impact through strategic partnerships & financial independence.</p>
+    <p>Regular <strong>monitoring & evaluation mechanisms</strong> will track progress, allowing <strong>adaptations for continued excellence</strong>.</p>
+</section>
+
+
+
+
+
+
+
+    
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Column 1: Contact Info -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>BNB Learning Center</p>
+            <p>Email: info@bnblearning.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Learning Ave, Education City</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="history.html">Our History</a></li>
+                <li><a href="goals.html">Goals & Objectives</a></li>
+                <li><a href="4d-model.html">The 4D Model</a></li>
+                <li><a href="student-support.html">Student Support</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Social Media -->
+<div class="footer-column">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>
+
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 BNB Learning Center. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--NAvigation Script-->
+
+  <script>
+    window.onload = function() {
+      document.querySelector('.nav-container').classList.add('show');
+    };
+  </script>
+
+
+
+
+</body>
+</html>

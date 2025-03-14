@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNB Learning Center</title>
+ 
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/indexbody.css">
+  <!--
+  <link rel="stylesheet" href="css/responsiveness.css">
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+
+  /* ======================= */
+/* HERO SECTION STYLES */
+/* ======================= */
+
+.happy-hero {
+    width: 100%;
+    height: 80vh;
+    background: url('images/longlong big.PNG') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.happy-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    top: 0;
+    left: 0;
+}
+
+.happy-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.8); /* Orange background */
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.happy-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.happy-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ======================= */
+/* OVERVIEW SECTION STYLES */
+/* ======================= */
+
+.happy-overview {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 165, 0, 0.1); /* Light orange transparent background */
+    border-left: 5px solid orange;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.happy-overview h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.happy-overview p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ======================= */
+/* HAPPY CLASSROOM SECTIONS */
+/* ======================= */
+
+.happy-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.happy-box {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .happy-content {
+        padding: 20px;
+    }
+
+    .happy-content h1 {
+        font-size: 2rem;
+    }
+
+    .happy-overview {
+        padding: 30px;
+    }
+
+    .happy-overview h2 {
+        font-size: 2rem;
+    }
+
+    .happy-overview p {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+  </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="nav-top">
+            <div class="nav-left">
+                <a href="index.html" class="home-button">
+                    <img src="images/logo.jpg" alt="BNB Logo">
+                    BNB Learning Center
+                </a>
+            </div>
+    
+    
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle"></div>
+    
+            <div class="nav-right">
+                <div class="dropdown">
+                    <a href="about.html">About BNB</a>
+                    <div class="dropdown-menu">
+                        <a href="history.html">History</a>
+                        <a href="leadership.html">Leadership</a>
+                        <a href="governance.html">Governance</a>
+                        <a href="milestone.html">Milestones</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="strategy.html">Strategy 2034</a>
+                    <div class="dropdown-menu">
+                        <a href="goals.html">Goals & Objectives</a>
+                        <a href="#">New & Exciting</a>
+                        <a href="4d.html">4D Model</a>
+                        <a href="opportunities.html">Opportunities</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="academics.html">Academics & Innovation</a>
+                    <div class="dropdown-menu">
+                        <a href="vission.html">Vision & Mission</a>
+                        <a href="digit.html">Digital Learning</a>
+                        <a href="teachers.html">Teacher Training</a>
+                        <a href="reading.html">Reading Culture</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="community.html">Community & Support</a>
+                    <div class="dropdown-menu">
+                        <a href="happy.html">Happy Classroom</a>
+                        <a href="partnership.html">Partnerships</a>
+                        <a href="support.html">Student Support</a>
+                        <a href="finance.html">Financial Sustainability</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="login-button">
+                    <a href="login.html">Portal Login</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+  
+
+
+<!-- Happy Classroom Hero Section -->
+<section class="happy-hero">
+    <div class="happy-overlay"></div>
+    <div class="happy-content">
+        <h1>Happiness & The Happy Classroom Initiative</h1>
+        <p>Creating a positive learning environment.</p>
+    </div>
+</section>
+
+<!-- Happy Classroom Overview -->
+<section class="happy-overview">
+    <h2>Creating a Positive Learning Environment</h2>
+    <p>BNB Learning Center believes that <strong>happiness is the foundation of effective learning</strong>. 
+       A <strong>positive, joyful, and engaging school environment</strong> enhances student motivation, creativity, and academic success. 
+       The <strong>Happy Classroom Initiative</strong> is designed to create a <strong>stress-free, supportive, and student-centered learning experience</strong> 
+       that promotes <strong>both emotional well-being and academic excellence</strong>.</p>
+</section>
+
+<!-- Happy Classroom Sections -->
+<section class="happy-sections">
+    <div class="happy-box">
+        <h3>1. What is the Happy Classroom Initiative? 😊</h3>
+        <p><strong>A School-Wide Approach to Student Well-Being:</strong></p>
+        <ul>
+            <li>✔ A structured program that <strong>focuses on mental, emotional, and social well-being</strong>.</li>
+            <li>✔ Encourages <strong>engaging, interactive, and creative learning methods</strong>.</li>
+            <li>✔ Ensures that students feel <strong>valued, respected, and motivated</strong> every day.</li>
+        </ul>
+        <p>🚀 <strong>Why It Matters:</strong></p>
+        <ul>
+            <li>✅ Reduces <strong>stress and anxiety in students</strong>.</li>
+            <li>✅ Increases <strong>classroom engagement and participation</strong>.</li>
+            <li>✅ Boosts <strong>academic performance and social skills</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="happy-box">
+        <h3>2. Positive Teacher-Student Relationships 🔹</h3>
+        <p><strong>A Supportive & Encouraging Teaching Approach:</strong></p>
+        <ul>
+            <li>✔ Teachers receive training on <strong>emotional intelligence and positive reinforcement</strong>.</li>
+            <li>✔ Focus on <strong>understanding individual student needs</strong> and providing encouragement.</li>
+            <li>✔ Ensuring a <strong>classroom culture of respect, kindness, and open communication</strong>.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Creates a <strong>trusting and safe space for learning</strong>.</p>
+    </div>
+
+    <div class="happy-box">
+        <h3>3. Interactive & Engaging Learning Methods 🎨</h3>
+        <p><strong>Making Learning Fun & Meaningful:</strong></p>
+        <ul>
+            <li>✔ Using <strong>games, storytelling, music, and hands-on activities</strong> to enhance engagement.</li>
+            <li>✔ Encouraging <strong>collaborative learning and group discussions</strong>.</li>
+            <li>✔ Adopting <strong>flexible learning spaces</strong> that encourage movement and creativity.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Keeps students <strong>actively engaged and excited to learn</strong>.</p>
+    </div>
+
+    <div class="happy-box">
+        <h3>4. Mindfulness & Emotional Well-Being 🧘‍♂️</h3>
+        <p><strong>Helping Students Manage Stress & Build Confidence:</strong></p>
+        <ul>
+            <li>✔ Incorporating <strong>short mindfulness exercises and relaxation techniques</strong> in the daily routine.</li>
+            <li>✔ Teaching <strong>emotional intelligence and self-awareness</strong>.</li>
+            <li>✔ Providing <strong>counseling and mentorship programs</strong> for student well-being.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Helps students <strong>develop resilience, self-discipline, and emotional balance</strong>.</p>
+    </div>
+
+    <div class="happy-box">
+        <h3>5. Parent & Community Involvement 👨‍👩‍👧</h3>
+        <p><strong>A Collective Effort for Student Well-Being:</strong></p>
+        <ul>
+            <li>✔ Encouraging <strong>parent participation in school activities and student achievements</strong>.</li>
+            <li>✔ Partnering with <strong>mental health experts for workshops and guidance programs</strong>.</li>
+            <li>✔ Promoting <strong>a school culture that prioritizes kindness, gratitude, and emotional support</strong>.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Strengthens the <strong>connection between home, school, and community</strong>.</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+    
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Column 1: Contact Info -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>BNB Learning Center</p>
+            <p>Email: info@bnblearning.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Learning Ave, Education City</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="history.html">Our History</a></li>
+                <li><a href="goals.html">Goals & Objectives</a></li>
+                <li><a href="4d-model.html">The 4D Model</a></li>
+                <li><a href="student-support.html">Student Support</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Social Media -->
+<div class="footer-column">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>
+
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 BNB Learning Center. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--NAvigation Script-->
+
+  <script>
+    window.onload = function() {
+      document.querySelector('.nav-container').classList.add('show');
+    };
+  </script>
+
+
+
+
+</body>
+</html>

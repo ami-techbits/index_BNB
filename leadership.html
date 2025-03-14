@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNB Learning Center</title>
+ 
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/indexbody.css">
+  <!--
+  <link rel="stylesheet" href="css/responsiveness.css">
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+
+    /* ======================= */
+/* HERO SECTION */
+/* ======================= */
+
+.hero-about {
+    width: 100%;
+    height: 100vh;
+    background: url('images/pan.PNG') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Dark Overlay */
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+    top: 0;
+    left: 0;
+}
+
+/* Hero Text */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+/* ======================= */
+/* LEADERSHIP HERO SECTION */
+/* ======================= */
+
+.leadership-hero {
+    width: 100%;
+    height: 80vh;
+    background: url('images/stu.PNG') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.leadership-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    top: 0;
+    left: 0;
+}
+
+.leadership-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.leadership-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.leadership-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ======================= */
+/* LEADERSHIP SECTIONS */
+/* ======================= */
+.leadership-overview {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 165, 0, 0.1); /* Light orange transparent background */
+    border-left: 5px solid orange;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.leadership-overview h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.leadership-overview p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #333;
+}
+/* Leadership Section Boxes */
+.leadership-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #555;
+}
+
+.leadership-box {
+    width: 45%;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.leadership-box h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.leadership-box p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.leadership-box ul {
+    padding-left: 20px;
+}
+
+.leadership-box ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .leadership-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .leadership-overview p {
+        text-align: center;
+    }
+}
+
+
+  </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="nav-top">
+            <div class="nav-left">
+                <a href="index.html" class="home-button">
+                    <img src="images/logo.jpg" alt="BNB Logo">
+                    BNB Learning Center
+                </a>
+            </div>
+    
+    
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle"></div>
+    
+            <div class="nav-right">
+                <div class="dropdown">
+                    <a href="about.html">About BNB</a>
+                    <div class="dropdown-menu">
+                        <a href="history.html">History</a>
+                        <a href="leadership.html">Leadership</a>
+                        <a href="governance.html">Governance</a>
+                        <a href="milestone.html">Milestones</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="strategy.html">Strategy 2034</a>
+                    <div class="dropdown-menu">
+                        <a href="goals.html">Goals & Objectives</a>
+                        <a href="#">New & Exciting</a>
+                        <a href="4d.html">4D Model</a>
+                        <a href="opportunities.html">Opportunities</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="academics.html">Academics & Innovation</a>
+                    <div class="dropdown-menu">
+                        <a href="vission.html">Vision & Mission</a>
+                        <a href="digit.html">Digital Learning</a>
+                        <a href="teachers.html">Teacher Training</a>
+                        <a href="reading.html">Reading Culture</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="community.html">Community & Support</a>
+                    <div class="dropdown-menu">
+                        <a href="happy.html">Happy Classroom</a>
+                        <a href="partnership.html">Partnerships</a>
+                        <a href="support.html">Student Support</a>
+                        <a href="finance.html">Financial Sustainability</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="login-button">
+                    <a href="login.html">Portal Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    
+
+
+
+<!-- Leadership Hero Section -->
+<section class="leadership-hero">
+    <div class="leadership-overlay"></div>
+    <div class="leadership-content">
+        <h1>Leadership at BNB Learning Center</h1>
+        <p>Empowering future leaders through excellence in governance and innovation.</p>
+    </div>
+</section>
+
+<!-- Leadership Overview -->
+<section class="leadership-overview">
+    <h2>A Visionary Leadership for Educational Excellence</h2>
+    <p>BNB Learning Center’s leadership is built on a foundation of <strong>integrity, innovation, and excellence</strong>. 
+        The institution prioritizes <strong>effective governance and strong management</strong>, ensuring that every decision 
+        aligns with its mission of <strong>empowering future leaders through world-class education</strong>.</p>
+</section>
+
+<!-- Leadership Sections -->
+<section class="leadership-sections">
+    <div class="leadership-box">
+        <h3>The BNB Board of Directors</h3>
+        <p>The <strong>Board of Directors</strong> oversees the institution’s strategic direction and governance. This five-member board plays a crucial role in:</p>
+        <ul>
+            <li>Approving key <strong>policies, budgets, and long-term strategies</strong>.</li>
+            <li>Evaluating the <strong>performance of senior leadership</strong>.</li>
+            <li>Ensuring BNB remains <strong>financially sustainable and academically competitive</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="leadership-box">
+        <h3>Executive Leadership Team</h3>
+        <p>The <strong>Executive Management Committee</strong>, led by the CEO, ensures effective implementation of BNB’s mission and vision. The team includes:</p>
+        <ul>
+            <li><strong>Chief Executive Officer (CEO)</strong> – Leads growth, community relations, and financial performance.</li>
+            <li><strong>Education Services Director</strong> – Maintains academic excellence and supervises principals.</li>
+            <li><strong>Finance & Administration Director</strong> – Manages budgeting, reporting, and financial sustainability.</li>
+            <li><strong>Training & Consultancy Director</strong> – Expands BNB’s impact through training and consultancy programs.</li>
+            <li><strong>Learning Advancement & Technology Manager</strong> – Oversees ICT, digital learning, and innovation.</li>
+        </ul>
+    </div>
+
+    <div class="leadership-box">
+        <h3>School-Level Leadership</h3>
+        <p>Each <strong>school division (Kindergarten, Elementary, Middle, and High School)</strong> has its own Principal and Deputy Principal, focusing on:</p>
+        <ul>
+            <li>Maintaining <strong>academic excellence & discipline</strong>.</li>
+            <li>Encouraging <strong>student engagement & extracurricular activities</strong>.</li>
+            <li>Supporting <strong>teacher mentorship & professional development</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="leadership-box">
+        <h3>The Role of Parents and the Community</h3>
+        <p>Leadership extends beyond administrators. Parents, community leaders, and businesses contribute through mentorship programs, scholarships, and partnerships.</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+    
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Column 1: Contact Info -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>BNB Learning Center</p>
+            <p>Email: info@bnblearning.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Learning Ave, Education City</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="history.html">Our History</a></li>
+                <li><a href="goals.html">Goals & Objectives</a></li>
+                <li><a href="4d-model.html">The 4D Model</a></li>
+                <li><a href="student-support.html">Student Support</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Social Media -->
+<div class="footer-column">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>
+
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 BNB Learning Center. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--NAvigation Script-->
+
+  <script>
+    window.onload = function() {
+      document.querySelector('.nav-container').classList.add('show');
+    };
+  </script>
+
+
+
+
+</body>
+</html>

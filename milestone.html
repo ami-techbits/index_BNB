@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNB Learning Center</title>
+ 
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/indexbody.css">
+  <!--
+  <link rel="stylesheet" href="css/responsiveness.css">
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+
+    /* ======================= */
+/* HERO SECTION */
+/* ======================= */
+
+.hero-about {
+    width: 100%;
+    height: 100vh;
+    background: url('images/pan.PNG') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Dark Overlay */
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+    top: 0;
+    left: 0;
+}
+
+/* Hero Text */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+/* ======================= */
+/* MILESTONES HERO SECTION */
+/* ======================= */
+
+.milestones-hero {
+    width: 100%;
+    height: 80vh;
+    background: url('images/stu3.PNG') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.milestones-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    top: 0;
+    left: 0;
+}
+
+.milestones-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.milestones-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.milestones-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ======================= */
+/* MILESTONES OVERVIEW */
+/* ======================= */
+
+.milestones-overview {
+    text-align: center;
+    padding: 50px 20px;
+    background: #71b1e6;
+}
+
+.milestones-overview h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.milestones-overview p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+/* ======================= */
+/* MILESTONES TIMELINE */
+/* ======================= */
+
+.milestones-timeline {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+.timeline-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Timeline Item */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    background: rgba(44, 62, 125, 0.95); /* Dark blue content background */
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Alternate Text/Image Position */
+.timeline-item.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Image Section */
+.timeline-img {
+    width: 50%;
+    height: 250px;
+    background: url('images/pan.PNG') no-repeat center center;
+    background-size: cover;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Text Section */
+.timeline-content {
+    width: 50%;
+    padding: 30px;
+    text-align: left;
+}
+
+.timeline-content h2 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-item.reverse {
+        flex-direction: column;
+    }
+
+    .timeline-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .timeline-content {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+  </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="nav-top">
+            <div class="nav-left">
+                <a href="index.html" class="home-button">
+                    <img src="images/logo.jpg" alt="BNB Logo">
+                    BNB Learning Center
+                </a>
+            </div>
+    
+    
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle"></div>
+    
+            <div class="nav-right">
+                <div class="dropdown">
+                    <a href="about.html">About BNB</a>
+                    <div class="dropdown-menu">
+                        <a href="history.html">History</a>
+                        <a href="leadership.html">Leadership</a>
+                        <a href="governance.html">Governance</a>
+                        <a href="milestone.html">Milestones</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="strategy.html">Strategy 2034</a>
+                    <div class="dropdown-menu">
+                        <a href="goals.html">Goals & Objectives</a>
+                        <a href="#">New & Exciting</a>
+                        <a href="4d.html">4D Model</a>
+                        <a href="opportunities.html">Opportunities</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="academics.html">Academics & Innovation</a>
+                    <div class="dropdown-menu">
+                        <a href="vission.html">Vision & Mission</a>
+                        <a href="digit.html">Digital Learning</a>
+                        <a href="teachers.html">Teacher Training</a>
+                        <a href="reading.html">Reading Culture</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="community.html">Community & Support</a>
+                    <div class="dropdown-menu">
+                        <a href="happy.html">Happy Classroom</a>
+                        <a href="partnership.html">Partnerships</a>
+                        <a href="support.html">Student Support</a>
+                        <a href="finance.html">Financial Sustainability</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="login-button">
+                    <a href="login.html">Portal Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+<!-- Milestones Hero Section -->
+<section class="milestones-hero">
+    <div class="milestones-overlay"></div>
+    <div class="milestones-content">
+        <h1>BNB Learning Center: Key Milestones</h1>
+        <p>A journey of growth, innovation, and excellence.</p>
+    </div>
+</section>
+
+<!-- Milestones Overview -->
+<section class="milestones-overview">
+    <h2>A Journey of Growth, Innovation, and Excellence</h2>
+    <p>BNB Learning Center has set a series of <strong>strategic milestones</strong> to guide its progress over the next decade. 
+        These milestones are designed to <strong>enhance education quality, expand opportunities, and strengthen governance</strong>, 
+        ensuring BNB continues to be a <strong>leader in academic excellence</strong>.</p>
+</section>
+
+<!-- Milestones Timeline -->
+<section class="milestones-timeline">
+    <div class="timeline-container">
+
+        <!-- Academic Excellence -->
+        <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+                <h2>Academic Excellence & Student Success</h2>
+                <p>📌 <strong>2024-2025:</strong> Implement a <strong>new digital learning system</strong> to integrate technology into classrooms.</p>
+                <p>📌 <strong>2026:</strong> Achieve <strong>85%+ university entrance exam pass rate</strong>, exceeding national averages.</p>
+                <p>📌 <strong>2028:</strong> Establish <strong>BNB as a model school for reading and comprehension</strong>.</p>
+            </div>
+        </div>
+
+        <!-- School Growth -->
+        <div class="timeline-item reverse">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+                <h2>School Growth & Infrastructure Development</h2>
+                <p>📌 <strong>2025:</strong> Expand BNB’s <strong>student population from 2,250 to 2,500</strong> while maintaining quality education.</p>
+                <p>📌 <strong>2027:</strong> Complete construction of <strong>state-of-the-art science and technology labs</strong>.</p>
+                <p>📌 <strong>2029:</strong> Build <strong>additional classroom blocks and modernized learning spaces</strong>.</p>
+            </div>
+        </div>
+
+        <!-- Teacher Training -->
+        <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+                <h2>Teacher Training & Development</h2>
+                <p>📌 <strong>2024:</strong> Launch a <strong>teacher mentorship program</strong> to improve instructional quality.</p>
+                <p>📌 <strong>2026:</strong> Establish BNB as a <strong>"Laboratory School"</strong> for training educators.</p>
+                <p>📌 <strong>2030:</strong> Develop a <strong>Teacher Training College</strong> to produce highly skilled educators.</p>
+            </div>
+        </div>
+
+        <!-- Governance Strengthening -->
+        <div class="timeline-item reverse">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+                <h2>Governance & Leadership Strengthening</h2>
+                <p>📌 <strong>2024:</strong> Restructure the <strong>Board of Directors and Executive Management</strong>.</p>
+                <p>📌 <strong>2025:</strong> Implement <strong>data-driven decision-making processes</strong> for academic and financial planning.</p>
+                <p>📌 <strong>2027:</strong> Develop a <strong>self-sustaining financial model</strong> to ensure long-term stability.</p>
+            </div>
+        </div>
+
+        <!-- Community & Partnerships -->
+        <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+                <h2>Community & Business Partnerships</h2>
+                <p>📌 <strong>2025:</strong> Strengthen ties with <strong>local businesses</strong> to fund scholarships and student support programs.</p>
+                <p>📌 <strong>2026:</strong> Create a <strong>global alumni network</strong> to mentor current students.</p>
+                <p>📌 <strong>2028:</strong> Expand <strong>international partnerships</strong> for student exchange and collaboration.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Column 1: Contact Info -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>BNB Learning Center</p>
+            <p>Email: info@bnblearning.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Learning Ave, Education City</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="history.html">Our History</a></li>
+                <li><a href="goals.html">Goals & Objectives</a></li>
+                <li><a href="4d-model.html">The 4D Model</a></li>
+                <li><a href="student-support.html">Student Support</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Social Media -->
+<div class="footer-column">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>
+
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 BNB Learning Center. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--NAvigation Script-->
+
+  <script>
+    window.onload = function() {
+      document.querySelector('.nav-container').classList.add('show');
+    };
+  </script>
+
+
+
+
+</body>
+</html>

@@ -51,6 +51,112 @@ body {
     border-radius: 45px;
   }
 
+
+  /* Responsive Navigation */
+@media screen and (max-width: 768px) {
+  .nav-container {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: orange; /* Background color */
+      z-index: 1000;
+  }
+
+  .nav-top {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+  }
+
+  .nav-left {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  .nav-left a {
+      font-size: 1.5rem;
+  }
+
+  .nav-left img {
+      height: 50px;
+  }
+
+  /* Hide desktop navigation */
+  .nav-right {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.9);
+  }
+
+  .nav-right a {
+      display: block;
+      padding: 15px;
+      width: 100%;
+      color: white;
+  }
+
+  .nav-right a:hover {
+      background: rgba(255, 165, 0, 0.8);
+  }
+
+  /* Mobile Menu Button */
+  .menu-toggle {
+      display: block;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      background: white;
+      border-radius: 5px;
+      position: absolute;
+      right: 15px;
+      top: 20px;
+  }
+
+  .menu-toggle::before {
+      content: "\f0c9"; /* Font Awesome hamburger icon */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: orange;
+      display: block;
+      text-align: center;
+      line-height: 40px;
+  }
+
+  /* Show menu when toggled */
+  .nav-right.active {
+      display: flex;
+  }
+}
+
+/* ======================= */
+/* HOME BUTTON IN NAVBAR */
+/* ======================= */
+
+.nav-left a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-left a img {
+  height: 90px;
+  margin-right: 10px;
+}
+
+.nav-left a:hover {
+  opacity: 0.8;
+}
+
+
   .nav-right {
     width: 66%;
     background-color: orange;

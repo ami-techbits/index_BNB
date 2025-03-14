@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNB Learning Center</title>
+ 
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/indexbody.css">
+  <!--
+  <link rel="stylesheet" href="css/responsiveness.css">
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+
+    /* ======================= */
+/* HERO SECTION */
+/* ======================= */
+
+.support-hero {
+    width: 100%;
+    height: 80vh;
+    background: url('images/teach.JPG') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.support-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    top: 0;
+    left: 0;
+}
+
+.support-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.support-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.support-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ======================= */
+/* STUDENT SUPPORT OVERVIEW SECTION */
+/* ======================= */
+
+.support-overview {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 165, 0, 0.1); /* Light orange transparent background */
+    border-left: 5px solid orange;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.support-overview h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.support-overview p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ======================= */
+/* STUDENT SUPPORT SECTIONS */
+/* ======================= */
+
+.support-sections {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Student Support Cards */
+.support-box {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid orange;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.support-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.support-box h3 {
+    font-size: 1.8rem;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.support-box p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ======================= */
+/* HOW TO SUPPORT STUDENTS SECTION */
+/* ======================= */
+
+.how-to-support {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 165, 0, 0.1);
+    border-radius: 8px;
+    border-left: 5px solid orange;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.how-to-support h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.how-to-support ul {
+    list-style: none;
+    padding: 0;
+}
+
+.how-to-support ul li {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.how-to-support ul li::before {
+    content: "✔";
+    color: orange;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .support-box {
+        width: 100%;
+    }
+
+    .support-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .support-box p {
+        font-size: 1rem;
+    }
+
+    .support-overview,
+    .how-to-support {
+        padding: 30px;
+    }
+
+    .support-overview h2,
+    .how-to-support h2 {
+        font-size: 2rem;
+    }
+
+    .support-overview p,
+    .how-to-support ul li {
+        font-size: 1.1rem;
+    }
+}
+
+
+  </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="nav-top">
+            <div class="nav-left">
+                <a href="index.html" class="home-button">
+                    <img src="images/logo.jpg" alt="BNB Logo">
+                    BNB Learning Center
+                </a>
+            </div>
+    
+    
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle"></div>
+    
+            <div class="nav-right">
+                <div class="dropdown">
+                    <a href="about.html">About BNB</a>
+                    <div class="dropdown-menu">
+                        <a href="history.html">History</a>
+                        <a href="leadership.html">Leadership</a>
+                        <a href="governance.html">Governance</a>
+                        <a href="milestone.html">Milestones</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="strategy.html">Strategy 2034</a>
+                    <div class="dropdown-menu">
+                        <a href="goals.html">Goals & Objectives</a>
+                        <a href="#">New & Exciting</a>
+                        <a href="4d.html">4D Model</a>
+                        <a href="opportunities.html">Opportunities</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="academics.html">Academics & Innovation</a>
+                    <div class="dropdown-menu">
+                        <a href="vission.html">Vision & Mission</a>
+                        <a href="digit.html">Digital Learning</a>
+                        <a href="teachers.html">Teacher Training</a>
+                        <a href="reading.html">Reading Culture</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="community.html">Community & Support</a>
+                    <div class="dropdown-menu">
+                        <a href="happy.html">Happy Classroom</a>
+                        <a href="partnership.html">Partnerships</a>
+                        <a href="support.html">Student Support</a>
+                        <a href="finance.html">Financial Sustainability</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="login-button">
+                    <a href="login.html">Portal Login</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    
+    
+
+
+
+<!-- Student Support Hero Section -->
+<section class="support-hero">
+    <div class="support-overlay"></div>
+    <div class="support-content">
+        <h1>Student Support at BNB Learning Center</h1>
+        <p>Ensuring every student thrives.</p>
+    </div>
+</section>
+
+<!-- Student Support Overview -->
+<section class="support-overview">
+    <h2>Ensuring Every Student Thrives</h2>
+    <p>At BNB Learning Center, <strong>student success goes beyond academics</strong>. 
+       The school provides a <strong>comprehensive student support system</strong> designed to ensure that 
+       <strong>every learner has access to the resources, mentorship, and guidance they need to excel</strong>. 
+       Through <strong>financial aid, academic mentoring, counseling, and career development</strong>, BNB fosters a 
+       <strong>holistic and nurturing environment</strong> for all students.</p>
+</section>
+
+<!-- Student Support Sections -->
+<section class="support-sections">
+    <div class="support-box">
+        <h3>1. Financial Aid & Scholarships 💰</h3>
+        <p><strong>Making Quality Education Accessible:</strong></p>
+        <ul>
+            <li>✔ Offering <strong>scholarships for high-achieving and underprivileged students</strong>.</li>
+            <li>✔ Partnering with <strong>businesses and alumni for sponsorship programs</strong>.</li>
+            <li>✔ Providing <strong>tuition assistance options</strong> for families in need.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Ensures <strong>equal learning opportunities for all students</strong>.</p>
+    </div>
+
+    <div class="support-box">
+        <h3>2. Academic Mentorship & Tutoring 📚</h3>
+        <p><strong>Supporting Students in Their Learning Journey:</strong></p>
+        <ul>
+            <li>✔ Implementing <strong>peer tutoring programs</strong> where senior students assist younger ones.</li>
+            <li>✔ Providing <strong>one-on-one academic mentorship</strong> for struggling students.</li>
+            <li>✔ Offering <strong>extra classes and remedial programs</strong> to reinforce key subjects.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Helps students <strong>build confidence, improve performance, and stay on track</strong>.</p>
+    </div>
+
+    <div class="support-box">
+        <h3>3. Counseling & Emotional Well-Being 🧠</h3>
+        <p><strong>Prioritizing Mental Health & Personal Growth:</strong></p>
+        <ul>
+            <li>✔ Establishing a <strong>school counseling program</strong> for emotional and psychological support.</li>
+            <li>✔ Providing <strong>guidance on stress management, self-confidence, and conflict resolution</strong>.</li>
+            <li>✔ Creating <strong>a safe space for students to express concerns and receive support</strong>.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Enhances <strong>mental well-being and emotional resilience</strong>.</p>
+    </div>
+
+    <div class="support-box">
+        <h3>4. Career Guidance & University Preparation 🎓</h3>
+        <p><strong>Helping Students Plan for the Future:</strong></p>
+        <ul>
+            <li>✔ Offering <strong>career counseling sessions</strong> to guide students in choosing paths aligned with their strengths.</li>
+            <li>✔ Partnering with <strong>universities for student admission guidance and scholarship opportunities</strong>.</li>
+            <li>✔ Organizing <strong>internships, leadership programs, and industry workshops</strong> to prepare students for real-world challenges.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Equips students with <strong>skills, knowledge, and exposure for future success</strong>.</p>
+    </div>
+
+    <div class="support-box">
+        <h3>5. Student Leadership & Extracurricular Activities 🏆</h3>
+        <p><strong>Developing Well-Rounded Individuals:</strong></p>
+        <ul>
+            <li>✔ Encouraging participation in <strong>student councils, clubs, and community projects</strong>.</li>
+            <li>✔ Providing platforms for <strong>public speaking, entrepreneurship, and creative expression</strong>.</li>
+            <li>✔ Organizing <strong>sports, arts, and leadership programs</strong> for holistic growth.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Builds <strong>confidence, teamwork, and leadership skills</strong> in students.</p>
+    </div>
+
+    <div class="support-box">
+        <h3>6. Special Support for Unique Learning Needs 📖</h3>
+        <p><strong>Ensuring Inclusive Education for All:</strong></p>
+        <ul>
+            <li>✔ Offering <strong>individualized learning support for students with special needs</strong>.</li>
+            <li>✔ Providing <strong>assistive technology and resources for diverse learners</strong>.</li>
+            <li>✔ Training teachers in <strong>inclusive teaching strategies</strong>.</li>
+        </ul>
+        <p>✅ <strong>Impact:</strong> Ensures that <strong>every student, regardless of learning challenges, receives the support they need to succeed</strong>.</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+    
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Column 1: Contact Info -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>BNB Learning Center</p>
+            <p>Email: info@bnblearning.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Learning Ave, Education City</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="history.html">Our History</a></li>
+                <li><a href="goals.html">Goals & Objectives</a></li>
+                <li><a href="4d-model.html">The 4D Model</a></li>
+                <li><a href="student-support.html">Student Support</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Social Media -->
+<div class="footer-column">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>
+
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 BNB Learning Center. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--NAvigation Script-->
+
+  <script>
+    window.onload = function() {
+      document.querySelector('.nav-container').classList.add('show');
+    };
+  </script>
+
+
+
+
+</body>
+</html>

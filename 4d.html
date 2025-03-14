@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNB Learning Center</title>
+ 
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/indexbody.css">
+  <!--
+  <link rel="stylesheet" href="css/responsiveness.css">
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+
+    /* ======================= */
+/* HERO SECTION */
+/* ======================= */
+
+
+/* ======================= */
+/* 4D MODEL HERO SECTION */
+/* ======================= */
+
+.model-hero {
+    width: 100%;
+    height: 80vh;
+    background: url('images/meter.JPG') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.model-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    top: 0;
+    left: 0;
+}
+
+.model-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.model-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.model-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ======================= */
+/* 4D MODEL SECTIONS */
+/* ======================= */
+
+/* ======================= */
+/* 4D MODEL OVERVIEW SECTION */
+/* ======================= */
+
+.model-overview {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 165, 0, 0.1); /* Light orange transparent background */
+    border-left: 5px solid orange;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.model-overview h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.model-overview p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ======================= */
+/* 4D MODEL SECTIONS */
+/* ======================= */
+
+.model-sections {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual 4D Model Cards */
+.model-box {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid orange;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.model-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.model-box h3 {
+    font-size: 1.8rem;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.model-box p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.model-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.model-box ul li {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.model-box ul li::before {
+    content: "✔";
+    color: orange;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .model-box {
+        width: 100%;
+    }
+
+    .model-overview {
+        padding: 30px;
+    }
+
+    .model-overview h2 {
+        font-size: 2rem;
+    }
+
+    .model-overview p {
+        font-size: 1.1rem;
+    }
+
+    .model-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .model-box p,
+    .model-box ul li {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+  </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="nav-top">
+            <div class="nav-left">
+                <a href="index.html" class="home-button">
+                    <img src="images/logo.jpg" alt="BNB Logo">
+                    BNB Learning Center
+                </a>
+            </div>
+    
+    
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle"></div>
+    
+            <div class="nav-right">
+                <div class="dropdown">
+                    <a href="about.html">About BNB</a>
+                    <div class="dropdown-menu">
+                        <a href="history.html">History</a>
+                        <a href="leadership.html">Leadership</a>
+                        <a href="governance.html">Governance</a>
+                        <a href="milestone.html">Milestones</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="strategy.html">Strategy 2034</a>
+                    <div class="dropdown-menu">
+                        <a href="goals.html">Goals & Objectives</a>
+                        <a href="#">New & Exciting</a>
+                        <a href="4d.html">4D Model</a>
+                        <a href="opportunities.html">Opportunities</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="academics.html">Academics & Innovation</a>
+                    <div class="dropdown-menu">
+                        <a href="vission.html">Vision & Mission</a>
+                        <a href="digit.html">Digital Learning</a>
+                        <a href="teachers.html">Teacher Training</a>
+                        <a href="reading.html">Reading Culture</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="community.html">Community & Support</a>
+                    <div class="dropdown-menu">
+                        <a href="happy.html">Happy Classroom</a>
+                        <a href="partnership.html">Partnerships</a>
+                        <a href="support.html">Student Support</a>
+                        <a href="finance.html">Financial Sustainability</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="login-button">
+                    <a href="login.html">Portal Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+    <!-- 4D Model Hero Section -->
+<section class="model-hero">
+    <div class="model-overlay"></div>
+    <div class="model-content">
+        <h1>The 4D Model: Driving BNB’s Strategic Vision</h1>
+        <p>Discover • Dream • Design • Deliver</p>
+    </div>
+</section>
+
+<!-- 4D Model Overview -->
+<section class="model-overview">
+    <h2>Building a Strong Future with the 4D Model</h2>
+    <p>BNB Learning Center’s <strong>Strategy 2024-2034</strong> is built on the <strong>4D Model</strong>—<strong>Discover, Dream, Design, and Deliver</strong>. 
+        This model ensures <strong>structured growth, continuous improvement, and educational innovation</strong>, allowing BNB to <strong>adapt to changes, address challenges, and seize new opportunities</strong>.</p>
+</section>
+
+<!-- 4D Model Sections -->
+<section class="model-sections">
+    <div class="model-box">
+        <h3>1. Discover: Identifying Strengths & Opportunities 🔍</h3>
+        <p><strong>What Happens in This Phase?</strong></p>
+        <ul>
+            <li>📌 Conducting <strong>internal assessments</strong> to evaluate strengths, weaknesses, and areas for improvement.</li>
+            <li>📌 Engaging stakeholders through <strong>surveys, focus groups, and workshops</strong>.</li>
+            <li>📌 Identifying <strong>external opportunities</strong> such as government support and industry partnerships.</li>
+        </ul>
+        <p>✅ <strong>Outcome:</strong> A <strong>data-driven understanding</strong> of where BNB stands and <strong>where it needs to go</strong>.</p>
+    </div>
+
+    <div class="model-box">
+        <h3>2. Dream: Envisioning the Future of BNB 💡</h3>
+        <p><strong>What Happens in This Phase?</strong></p>
+        <ul>
+            <li>📌 Setting <strong>bold goals and innovative strategies</strong> to transform BNB into a leader in education.</li>
+            <li>📌 Defining a <strong>new vision, mission, and values</strong> aligned with modern learning trends.</li>
+            <li>📌 Creating initiatives like:</li>
+            <ul>
+                <li>✅ <strong>Happy Classroom Initiative</strong> 🌟</li>
+                <li>✅ <strong>Technology-Driven Learning</strong> 💻</li>
+                <li>✅ <strong>Teacher Training & Leadership Development</strong> 🎓</li>
+                <li>✅ <strong>Global Student Exchange & Collaboration</strong> 🌍</li>
+            </ul>
+        </ul>
+        <p>✅ <strong>Outcome:</strong> A <strong>clear vision for the future</strong>, inspiring the BNB community to <strong>strive for excellence</strong>.</p>
+    </div>
+
+    <div class="model-box">
+        <h3>3. Design: Building the Strategic Roadmap 🛠</h3>
+        <p><strong>What Happens in This Phase?</strong></p>
+        <ul>
+            <li>📌 Conducting a <strong>systems audit</strong> to evaluate existing processes and pinpoint gaps.</li>
+            <li>📌 Designing <strong>action plans, policies, and governance structures</strong> to implement the vision.</li>
+            <li>📌 Allocating <strong>financial and human resources</strong> to bring the strategy to life.</li>
+        </ul>
+        <p>✅ <strong>Outcome:</strong> A <strong>structured blueprint</strong> for <strong>turning vision into reality</strong>.</p>
+    </div>
+
+    <div class="model-box">
+        <h3>4. Deliver: Implementing & Sustaining Change 🚀</h3>
+        <p><strong>What Happens in This Phase?</strong></p>
+        <ul>
+            <li>📌 <strong>Executing the strategy step by step</strong>, ensuring alignment with BNB’s goals and objectives.</li>
+            <li>📌 <strong>Regular monitoring and evaluation</strong> to track progress and make adjustments.</li>
+            <li>📌 Encouraging a <strong>culture of continuous improvement</strong> among teachers, students, and parents.</li>
+            <li>📌 Leveraging <strong>partnerships and technology</strong> to sustain long-term success.</li>
+        </ul>
+        <p>✅ <strong>Outcome:</strong> A <strong>fully implemented and thriving</strong> BNB strategy positioning the school as a leader in education.</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+    
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Column 1: Contact Info -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>BNB Learning Center</p>
+            <p>Email: info@bnblearning.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Learning Ave, Education City</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="history.html">Our History</a></li>
+                <li><a href="goals.html">Goals & Objectives</a></li>
+                <li><a href="4d-model.html">The 4D Model</a></li>
+                <li><a href="student-support.html">Student Support</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Social Media -->
+<div class="footer-column">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>
+
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 BNB Learning Center. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--NAvigation Script-->
+
+  <script>
+    window.onload = function() {
+      document.querySelector('.nav-container').classList.add('show');
+    };
+  </script>
+
+
+
+
+</body>
+</html>

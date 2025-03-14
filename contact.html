@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNB Learning Center</title>
+ 
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/indexbody.css">
+  <!--
+  <link rel="stylesheet" href="css/responsiveness.css">
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+
+    /* ======================= */
+/* HERO SECTION */
+/* ======================= */
+/* ======================= */
+/* CONTACT PAGE HERO SECTION */
+/* ======================= */
+
+.hero-contact {
+    width: 100%;
+    height: 80vh;
+    background: url('images/bnb 14.JPG') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    top: 0;
+    left: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ======================= */
+/* CONTACT FORM SECTION */
+/* ======================= */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 165, 0, 0.1); /* Light orange transparent background */
+    border-left: 5px solid orange;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.contact-info h4 {
+    font-size: 1.8rem;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-form {
+    text-align: left;
+}
+
+.contact-form h5 {
+    font-size: 1.8rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background: darkorange;
+}
+
+/* ======================= */
+/* MAP SECTION */
+/* ======================= */
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    .container h2 {
+        font-size: 2rem;
+    }
+
+    .contact-info h4 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info p {
+        font-size: 1.1rem;
+    }
+
+    .contact-form h5 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+        padding: 10px 16px;
+    }
+}
+
+
+  </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="nav-top">
+            <div class="nav-left">
+                <img src="images/logo.jpg" alt="BNB Logo">
+                BNB Learning Center
+            </div>
+    
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle"></div>
+    
+            <div class="nav-right">
+                <div class="dropdown">
+                    <a href="about.html">About BNB</a>
+                    <div class="dropdown-menu">
+                        <a href="history.html">History</a>
+                        <a href="#">Leadership</a>
+                        <a href="#">Governance</a>
+                        <a href="#">Milestones</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Strategy 2034</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Goals & Objectives</a>
+                        <a href="#">New & Exciting</a>
+                        <a href="#">4D Model</a>
+                        <a href="#">Opportunities</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Academics & Innovation</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Vision & Mission</a>
+                        <a href="#">Digital Learning</a>
+                        <a href="#">Teacher Training</a>
+                        <a href="#">Reading Culture</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Community & Support</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Happy Classroom</a>
+                        <a href="#">Partnerships</a>
+                        <a href="#">Student Support</a>
+                        <a href="#">Financial Sustainability</a>
+                    </div>
+                </div>
+                <div class="login-button">
+                    <a href="#">Portal Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <section class="hero-contact">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1> BNB Learning Center</h1>
+            <p>Empowering future leaders through excellence in education and innovation.</p>
+        </div>
+    </section>
+    
+
+
+
+<!-- Contact Page Content -->
+<div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row g-4">
+      <!-- Contact Info and Form -->
+      <div class="col-md-6">
+        <div class="contact-info">
+          <h4>BNB Learning Center Hawassa</h4>
+          <p><strong>Address:</strong> BNB Learning Center, Hawassa, Ethiopia</p>
+          <p><strong>Phone:</strong> +251-912-345-678</p>
+          <p><strong>Email:</strong> contact@bnbhawassa.edu.et</p>
+        </div>
+        
+        <div class="contact-form mt-4">
+          <h5>Send Us a Message</h5>
+          <form action="#" method="post">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            <input type="tel" name="phone" class="form-control" placeholder="Your Phone Number" required>
+            <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+  
+      <!-- Map Section -->
+      <div class="col-md-6">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.397355951732!2d38.484935799999995!3d7.079847300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17b15aaa7abc2089%3A0xb6b0a038c485bd3b!2sBNB%20Learning%20Centre!5e0!3m2!1sen!2set!4v1731748106208!5m2!1sen!2set" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+
+
+
+
+
+
+
+    
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Column 1: Contact Info -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>BNB Learning Center</p>
+            <p>Email: info@bnblearning.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Learning Ave, Education City</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="history.html">Our History</a></li>
+                <li><a href="goals.html">Goals & Objectives</a></li>
+                <li><a href="4d-model.html">The 4D Model</a></li>
+                <li><a href="student-support.html">Student Support</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Social Media -->
+<div class="footer-column">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>
+
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 BNB Learning Center. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--NAvigation Script-->
+
+  <script>
+    window.onload = function() {
+      document.querySelector('.nav-container').classList.add('show');
+    };
+  </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNB Learning Center</title>
+ 
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/indexbody.css">
+  <!--
+  <link rel="stylesheet" href="css/responsiveness.css">
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+
+    /* ======================= */
+/* HERO SECTION */
+/* ======================= */
+
+
+/* ======================= */
+/* ACADEMICS HERO SECTION */
+/* ======================= */
+/* ======================= */
+/* ACADEMICS HERO SECTION */
+/* ======================= */
+
+.academics-hero {
+    width: 100%;
+    height: 80vh;
+    background: url('images/long.PNG') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.academics-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    top: 0;
+    left: 0;
+}
+
+.academics-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(20, 20, 20, 0.8); /* Semi-transparent orange */
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.academics-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.academics-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .academics-content {
+        padding: 20px;
+    }
+
+    .academics-content h1 {
+        font-size: 2rem;
+    }
+
+    .academics-content p {
+        font-size: 1.2rem;
+    }
+}
+
+/* ======================= */
+/* ACADEMICS SECTIONS */
+/* ======================= */
+/* ======================= */
+/* ACADEMICS OVERVIEW SECTION */
+/* ======================= */
+
+.academics-overview {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 165, 0, 0.1); /* Light orange transparent background */
+    border-left: 5px solid orange;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.academics-overview h2 {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.academics-overview p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ======================= */
+/* ACADEMICS & INNOVATION SECTIONS */
+/* ======================= */
+
+.academics-sections {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Academics Cards */
+.academics-box {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid orange;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.academics-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.academics-box h3 {
+    font-size: 1.8rem;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.academics-box p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.academics-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.academics-box ul li {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.academics-box ul li::before {
+    content: "✔";
+    color: orange;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .academics-box {
+        width: 100%;
+    }
+
+    .academics-overview {
+        padding: 30px;
+    }
+
+    .academics-overview h2 {
+        font-size: 2rem;
+    }
+
+    .academics-overview p {
+        font-size: 1.1rem;
+    }
+
+    .academics-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .academics-box p,
+    .academics-box ul li {
+        font-size: 1.1rem;
+    }
+}
+
+
+  </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="nav-top">
+            <div class="nav-left">
+                <a href="index.html" class="home-button">
+                    <img src="images/logo.jpg" alt="BNB Logo">
+                    BNB Learning Center
+                </a>
+            </div>
+    
+    
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle"></div>
+    
+            <div class="nav-right">
+                <div class="dropdown">
+                    <a href="about.html">About BNB</a>
+                    <div class="dropdown-menu">
+                        <a href="history.html">History</a>
+                        <a href="leadership.html">Leadership</a>
+                        <a href="governance.html">Governance</a>
+                        <a href="milestone.html">Milestones</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="strategy.html">Strategy 2034</a>
+                    <div class="dropdown-menu">
+                        <a href="goals.html">Goals & Objectives</a>
+                        <a href="#">New & Exciting</a>
+                        <a href="4d.html">4D Model</a>
+                        <a href="opportunities.html">Opportunities</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="academics.html">Academics & Innovation</a>
+                    <div class="dropdown-menu">
+                        <a href="vission.html">Vision & Mission</a>
+                        <a href="digit.html">Digital Learning</a>
+                        <a href="teachers.html">Teacher Training</a>
+                        <a href="reading.html">Reading Culture</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="community.html">Community & Support</a>
+                    <div class="dropdown-menu">
+                        <a href="happy.html">Happy Classroom</a>
+                        <a href="partnership.html">Partnerships</a>
+                        <a href="support.html">Student Support</a>
+                        <a href="finance.html">Financial Sustainability</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="login-button">
+                    <a href="login.html">Portal Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    
+
+
+
+<!-- Academics & Innovation Hero Section -->
+<section class="academics-hero">
+    <div class="academics-overlay"></div>
+    <div class="academics-content">
+        <h1>Academics & Innovation at BNB Learning Center</h1>
+        <p>A future-ready approach to learning.</p>
+    </div>
+</section>
+
+<!-- Academics Overview -->
+<section class="academics-overview">
+    <h2>A Future-Ready Approach to Learning</h2>
+    <p>BNB Learning Center is committed to <strong>academic excellence and educational innovation</strong>, ensuring that students receive a <strong>high-quality, future-oriented education</strong>. 
+       Through <strong>modern teaching methods, technology integration, and a focus on holistic learning</strong>, BNB is preparing students to be <strong>critical thinkers, problem solvers, and global leaders</strong>.</p>
+</section>
+
+<!-- Academics & Innovation Sections -->
+<section class="academics-sections">
+    <div class="academics-box">
+        <h3>1. A Rigorous and Well-Structured Curriculum 📚</h3>
+        <p><strong>Academics at BNB are designed to:</strong></p>
+        <ul>
+            <li>✔ Ensure <strong>strong foundational knowledge</strong> across all subjects.</li>
+            <li>✔ Emphasize <strong>STEM (Science, Technology, Engineering, and Mathematics)</strong> for future careers.</li>
+            <li>✔ Incorporate <strong>critical thinking, research skills, and leadership training</strong>.</li>
+        </ul>
+        <p>🎯 <strong>Key Focus Areas:</strong></p>
+        <ul>
+            <li>✅ Strengthening <strong>reading comprehension and literacy</strong>.</li>
+            <li>✅ Offering <strong>advanced science and math programs</strong>.</li>
+            <li>✅ Expanding <strong>extracurricular activities for well-rounded development</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="academics-box">
+        <h3>2. Innovation in Teaching & Learning 💡</h3>
+        <p><strong>How BNB is Innovating Education:</strong></p>
+        <ul>
+            <li>✔ <strong>Smart Classrooms & Digital Learning</strong>: Integrating technology to enhance engagement.</li>
+            <li>✔ <strong>Project-Based Learning (PBL)</strong>: Encouraging students to apply concepts in real-world scenarios.</li>
+            <li>✔ <strong>Personalized Learning Paths</strong>: Adapting teaching methods to meet individual student needs.</li>
+        </ul>
+        <p>🚀 <strong>What’s New?</strong></p>
+        <ul>
+            <li>✅ Launching <strong>interactive e-learning platforms</strong>.</li>
+            <li>✅ Expanding <strong>computer science & coding courses</strong>.</li>
+            <li>✅ Using <strong>AI-driven assessment tools</strong> to track student progress.</li>
+        </ul>
+    </div>
+
+    <div class="academics-box">
+        <h3>3. Teacher Training & Development 🎓</h3>
+        <p><strong>Empowering Educators for Excellence:</strong></p>
+        <ul>
+            <li>✔ BNB is establishing itself as a <strong>Teacher Training Hub</strong>.</li>
+            <li>✔ Regular <strong>workshops and professional development programs</strong> ensure up-to-date best practices.</li>
+        </ul>
+        <p>🌟 <strong>Innovation in Teacher Training:</strong></p>
+        <ul>
+            <li>✅ Hands-on training through the <strong>BNB Laboratory School Initiative</strong>.</li>
+            <li>✅ Integration of <strong>blended learning methods (online & offline education)</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="academics-box">
+        <h3>4. State-of-the-Art Learning Facilities 🏫</h3>
+        <p><strong>BNB is investing in infrastructure to support innovation, including:</strong></p>
+        <ul>
+            <li>✔ <strong>STEM-focused laboratories</strong> for hands-on learning.</li>
+            <li>✔ <strong>Modern libraries with digital resources</strong>.</li>
+            <li>✔ <strong>Creative arts & music studios</strong> to support holistic development.</li>
+        </ul>
+        <p>🛠 <strong>Upcoming Developments:</strong></p>
+        <ul>
+            <li>✅ Construction of <strong>next-generation science & technology labs</strong>.</li>
+            <li>✅ Expansion of <strong>computer labs for coding & robotics</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="academics-box">
+        <h3>5. Student-Centered Learning & Global Competitiveness 🌍</h3>
+        <p><strong>Preparing Students for a Global Future:</strong></p>
+        <ul>
+            <li>✔ Encouraging <strong>collaborative learning</strong> through group projects & research.</li>
+            <li>✔ Providing access to <strong>international academic competitions & exchange programs</strong>.</li>
+            <li>✔ Partnering with <strong>global institutions for cross-cultural learning</strong>.</li>
+        </ul>
+        <p>🚀 <strong>Key Initiatives:</strong></p>
+        <ul>
+            <li>✅ Introducing <strong>Global Student Exchange Programs</strong>.</li>
+            <li>✅ Connecting students with <strong>mentors from international universities</strong>.</li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+    
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Column 1: Contact Info -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>BNB Learning Center</p>
+            <p>Email: info@bnblearning.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Learning Ave, Education City</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="history.html">Our History</a></li>
+                <li><a href="goals.html">Goals & Objectives</a></li>
+                <li><a href="4d-model.html">The 4D Model</a></li>
+                <li><a href="student-support.html">Student Support</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Social Media -->
+<div class="footer-column">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>
+
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 BNB Learning Center. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--NAvigation Script-->
+
+  <script>
+    window.onload = function() {
+      document.querySelector('.nav-container').classList.add('show');
+    };
+  </script>
+
+
+
+
+</body>
+</html>
