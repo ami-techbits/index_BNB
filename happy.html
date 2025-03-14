@@ -91,13 +91,16 @@
 /* ======================= */
 /* HAPPY CLASSROOM SECTIONS */
 /* ======================= */
+/* ======================= */
+/* HAPPY CLASSROOM DETAILS */
+/* ======================= */
 
 .happy-sections {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 50px 20px;
+    gap: 30px;
+    padding: 60px 20px;
     max-width: 1200px;
     margin: auto;
 }
@@ -105,11 +108,65 @@
 .happy-box {
     width: 45%;
     background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     text-align: left;
+    border-left: 5px solid orange;
+    transition: transform 0.3s ease-in-out;
 }
+
+.happy-box:hover {
+    transform: scale(1.02);
+}
+
+.happy-box h3 {
+    font-size: 1.8rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.happy-box p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.happy-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.happy-box ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.happy-box ul li::before {
+    content: "✔";
+    color: orange;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .happy-box {
+        width: 90%;
+    }
+    
+    .happy-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .happy-box p, .happy-box ul li {
+        font-size: 1rem;
+    }
+}
+
 
 
 /* Responsive Design */
@@ -216,72 +273,72 @@
 <!-- Happy Classroom Overview -->
 <section class="happy-overview">
     <h2>Creating a Positive Learning Environment</h2>
-    <p>BNB Learning Center believes that <strong>happiness is the foundation of effective learning</strong>. 
-       A <strong>positive, joyful, and engaging school environment</strong> enhances student motivation, creativity, and academic success. 
-       The <strong>Happy Classroom Initiative</strong> is designed to create a <strong>stress-free, supportive, and student-centered learning experience</strong> 
-       that promotes <strong>both emotional well-being and academic excellence</strong>.</p>
+    <p>BNB Learning Center believes that  happiness is the foundation of effective learning . 
+       A  positive, joyful, and engaging school environment  enhances student motivation, creativity, and academic success. 
+       The  Happy Classroom Initiative  is designed to create a  stress-free, supportive, and student-centered learning experience  
+       that promotes  both emotional well-being and academic excellence .</p>
 </section>
 
 <!-- Happy Classroom Sections -->
 <section class="happy-sections">
     <div class="happy-box">
         <h3>1. What is the Happy Classroom Initiative? 😊</h3>
-        <p><strong>A School-Wide Approach to Student Well-Being:</strong></p>
+        <p> A School-Wide Approach to Student Well-Being: </p>
         <ul>
-            <li>✔ A structured program that <strong>focuses on mental, emotional, and social well-being</strong>.</li>
-            <li>✔ Encourages <strong>engaging, interactive, and creative learning methods</strong>.</li>
-            <li>✔ Ensures that students feel <strong>valued, respected, and motivated</strong> every day.</li>
+            <li>✔ A structured program that  focuses on mental, emotional, and social well-being .</li>
+            <li>✔ Encourages  engaging, interactive, and creative learning methods .</li>
+            <li>✔ Ensures that students feel  valued, respected, and motivated  every day.</li>
         </ul>
-        <p>🚀 <strong>Why It Matters:</strong></p>
+        <p>🚀  Why It Matters: </p>
         <ul>
-            <li>✅ Reduces <strong>stress and anxiety in students</strong>.</li>
-            <li>✅ Increases <strong>classroom engagement and participation</strong>.</li>
-            <li>✅ Boosts <strong>academic performance and social skills</strong>.</li>
+            <li>  Reduces  stress and anxiety in students .</li>
+            <li>  Increases  classroom engagement and participation .</li>
+            <li>  Boosts  academic performance and social skills .</li>
         </ul>
     </div>
 
     <div class="happy-box">
         <h3>2. Positive Teacher-Student Relationships 🔹</h3>
-        <p><strong>A Supportive & Encouraging Teaching Approach:</strong></p>
+        <p> A Supportive & Encouraging Teaching Approach: </p>
         <ul>
-            <li>✔ Teachers receive training on <strong>emotional intelligence and positive reinforcement</strong>.</li>
-            <li>✔ Focus on <strong>understanding individual student needs</strong> and providing encouragement.</li>
-            <li>✔ Ensuring a <strong>classroom culture of respect, kindness, and open communication</strong>.</li>
+            <li>✔ Teachers receive training on  emotional intelligence and positive reinforcement .</li>
+            <li>✔ Focus on  understanding individual student needs  and providing encouragement.</li>
+            <li>✔ Ensuring a  classroom culture of respect, kindness, and open communication .</li>
         </ul>
-        <p>✅ <strong>Impact:</strong> Creates a <strong>trusting and safe space for learning</strong>.</p>
+        <p>   Impact:  Creates a  trusting and safe space for learning .</p>
     </div>
 
     <div class="happy-box">
         <h3>3. Interactive & Engaging Learning Methods 🎨</h3>
-        <p><strong>Making Learning Fun & Meaningful:</strong></p>
+        <p> Making Learning Fun & Meaningful: </p>
         <ul>
-            <li>✔ Using <strong>games, storytelling, music, and hands-on activities</strong> to enhance engagement.</li>
-            <li>✔ Encouraging <strong>collaborative learning and group discussions</strong>.</li>
-            <li>✔ Adopting <strong>flexible learning spaces</strong> that encourage movement and creativity.</li>
+            <li>✔ Using  games, storytelling, music, and hands-on activities  to enhance engagement.</li>
+            <li>✔ Encouraging  collaborative learning and group discussions .</li>
+            <li>✔ Adopting  flexible learning spaces  that encourage movement and creativity.</li>
         </ul>
-        <p>✅ <strong>Impact:</strong> Keeps students <strong>actively engaged and excited to learn</strong>.</p>
+        <p>   Impact:  Keeps students  actively engaged and excited to learn .</p>
     </div>
 
     <div class="happy-box">
         <h3>4. Mindfulness & Emotional Well-Being 🧘‍♂️</h3>
-        <p><strong>Helping Students Manage Stress & Build Confidence:</strong></p>
+        <p> Helping Students Manage Stress & Build Confidence: </p>
         <ul>
-            <li>✔ Incorporating <strong>short mindfulness exercises and relaxation techniques</strong> in the daily routine.</li>
-            <li>✔ Teaching <strong>emotional intelligence and self-awareness</strong>.</li>
-            <li>✔ Providing <strong>counseling and mentorship programs</strong> for student well-being.</li>
+            <li>✔ Incorporating  short mindfulness exercises and relaxation techniques  in the daily routine.</li>
+            <li>✔ Teaching  emotional intelligence and self-awareness .</li>
+            <li>✔ Providing  counseling and mentorship programs  for student well-being.</li>
         </ul>
-        <p>✅ <strong>Impact:</strong> Helps students <strong>develop resilience, self-discipline, and emotional balance</strong>.</p>
+        <p>   Impact:  Helps students  develop resilience, self-discipline, and emotional balance .</p>
     </div>
 
     <div class="happy-box">
         <h3>5. Parent & Community Involvement 👨‍👩‍👧</h3>
-        <p><strong>A Collective Effort for Student Well-Being:</strong></p>
+        <p> A Collective Effort for Student Well-Being: </p>
         <ul>
-            <li>✔ Encouraging <strong>parent participation in school activities and student achievements</strong>.</li>
-            <li>✔ Partnering with <strong>mental health experts for workshops and guidance programs</strong>.</li>
-            <li>✔ Promoting <strong>a school culture that prioritizes kindness, gratitude, and emotional support</strong>.</li>
+            <li>✔ Encouraging  parent participation in school activities and student achievements .</li>
+            <li>✔ Partnering with  mental health experts for workshops and guidance programs .</li>
+            <li>✔ Promoting  a school culture that prioritizes kindness, gratitude, and emotional support .</li>
         </ul>
-        <p>✅ <strong>Impact:</strong> Strengthens the <strong>connection between home, school, and community</strong>.</p>
+        <p>   Impact:  Strengthens the  connection between home, school, and community .</p>
     </div>
 </section>
 
