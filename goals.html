@@ -130,32 +130,84 @@
     margin: auto;
     line-height: 1.6;
 }
+/* ======================= */
+/* GOALS & OBJECTIVES SECTIONS */
+/* ======================= */
 
 .goals-sections {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: auto;
 }
 
+/* Individual Goals & Objectives Cards */
 .goals-box {
     width: 45%;
     background: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid orange;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Responsive */
+.goals-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.goals-box h3 {
+    font-size: 1.8rem;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.goals-box p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.goals-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.goals-box ul li {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.goals-box ul li::before {
+    content: "✔";
+    color: orange;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
 @media screen and (max-width: 768px) {
     .goals-box {
         width: 100%;
     }
+
+    .goals-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .goals-box p,
+    .goals-box ul li {
+        font-size: 1.1rem;
+    }
 }
+
 
   </style>
 </head>
@@ -237,80 +289,80 @@
 <!-- Goals Overview -->
 <section class="goals-overview">
     <h2>A Vision for Excellence & Holistic Education</h2>
-    <p>BNB Learning Center is committed to <strong>academic excellence, student success, and community impact</strong>. 
-       The institution has established <strong>clear goals and objectives</strong> to drive its <strong>long-term strategic vision</strong> under 
-       the <strong>BNB Strategy 2024-2034</strong>.</p>
+    <p>BNB Learning Center is committed to  academic excellence, student success, and community impact . 
+       The institution has established  clear goals and objectives  to drive its  long-term strategic vision  under 
+       the  BNB Strategy 2024-2034 .</p>
 </section>
 
 <!-- Goals & Objectives Sections -->
 <section class="goals-sections">
     <div class="goals-box">
         <h3>Delivering High-Quality Education</h3>
-        <p>🎯 <strong>Goal:</strong> Provide a <strong>well-rounded and innovative</strong> learning experience.</p>
+        <p>🎯  Goal:  Provide a  well-rounded and innovative  learning experience.</p>
         <ul>
-            <li>✅ Implement <strong>technology-driven teaching methods</strong> by 2025.</li>
-            <li>✅ Ensure <strong>85%+ pass rate</strong> in university entrance exams by 2026.</li>
-            <li>✅ Strengthen <strong>reading culture</strong> through school-wide literacy programs.</li>
+            <li> Implement  technology-driven teaching methods  by 2025.</li>
+            <li> Ensure 85%+ pass rate in university entrance exams by 2026.</li>
+            <li>Strengthen reading culture through school-wide literacy programs.</li>
         </ul>
     </div>
 
     <div class="goals-box">
         <h3>Creating a Happy & Inclusive Learning Environment</h3>
-        <p>🎯 <strong>Goal:</strong> Foster a <strong>positive, engaging, and supportive</strong> school culture.</p>
+        <p>🎯  Goal:  Foster a  positive, engaging, and supportive  school culture.</p>
         <ul>
-            <li>✅ Launch the <strong>"Happy Classroom Initiative"</strong> to improve student well-being.</li>
-            <li>✅ Upgrade <strong>school aesthetics</strong> and infrastructure.</li>
-            <li>✅ Increase <strong>student engagement</strong> through arts, sports, and leadership programs.</li>
+            <li> Launch the "Happy Classroom Initiative" to improve student well-being.</li>
+            <li> Upgrade school aesthetics and infrastructure.</li>
+            <li> Increase student engagement through arts, sports, and leadership programs.</li>
         </ul>
     </div>
 
     <div class="goals-box">
         <h3>Enhancing Teacher Training & Development</h3>
-        <p>🎯 <strong>Goal:</strong> Build <strong>a skilled and innovative teaching workforce</strong>.</p>
+        <p>🎯  Goal:  Build  a skilled and innovative teaching workforce .</p>
         <ul>
-            <li>✅ Establish a <strong>Teachers Training Laboratory</strong> by 2026.</li>
-            <li>✅ Develop a <strong>Teacher Training College</strong> by 2030.</li>
-            <li>✅ Conduct <strong>annual professional development</strong> for educators.</li>
+            <li> Establish a  Teachers Training Laboratory  by 2026.</li>
+            <li> Develop a  Teacher Training College  by 2030.</li>
+            <li> Conduct  annual professional development  for educators.</li>
         </ul>
     </div>
 
     <div class="goals-box">
         <h3>Strengthening Community & Business Partnerships</h3>
-        <p>🎯 <strong>Goal:</strong> Build <strong>sustainable relationships</strong> with businesses and organizations.</p>
+        <p>🎯  Goal:  Build  sustainable relationships  with businesses and organizations.</p>
         <ul>
-            <li>✅ Secure <strong>scholarships & financial aid</strong> for students through corporate sponsorships.</li>
-            <li>✅ Create <strong>internship & career mentorship programs</strong> by 2025.</li>
-            <li>✅ Expand <strong>local and international collaborations</strong> for student exchange programs.</li>
+            <li> Secure  scholarships & financial aid  for students through corporate sponsorships.</li>
+            <li> Create  internship & career mentorship programs  by 2025.</li>
+            <li> Expand  local and international collaborations  for student exchange programs.</li>
         </ul>
     </div>
 
     <div class="goals-box">
         <h3>Expanding Student Population & Infrastructure</h3>
-        <p>🎯 <strong>Goal:</strong> Grow BNB’s <strong>capacity while maintaining high education standards</strong>.</p>
+        <p>🎯  Goal:  Grow BNB’s  capacity while maintaining high education standards .</p>
         <ul>
-            <li>✅ Increase enrollment from <strong>2,250 to 3,000 students</strong> by 2028.</li>
-            <li>✅ Construct <strong>new science & technology labs</strong> by 2027.</li>
-            <li>✅ Develop <strong>modern digital classrooms</strong> for enhanced learning.</li>
+            <li> Increase enrollment from  2,250 to 3,000 students  by 2028.</li>
+            <li> Construct  new science & technology labs  by 2027.</li>
+            <li> Develop  modern digital classrooms  for enhanced learning.</li>
         </ul>
     </div>
 
     <div class="goals-box">
         <h3>Improving Governance & Financial Sustainability</h3>
-        <p>🎯 <strong>Goal:</strong> Ensure <strong>long-term financial stability and operational efficiency</strong>.</p>
+        <p>🎯  Goal:  Ensure  long-term financial stability and operational efficiency .</p>
         <ul>
-            <li>✅ Implement <strong>data-driven decision-making</strong> for budgeting and planning.</li>
-            <li>✅ Diversify revenue through <strong>consultancy & vocational training programs</strong>.</li>
-            <li>✅ Strengthen <strong>Board of Directors’ oversight & transparency</strong>.</li>
+            <li> Implement  data-driven decision-making  for budgeting and planning.</li>
+            <li> Diversify revenue through  consultancy & vocational training programs .</li>
+            <li> Strengthen  Board of Directors’ oversight & transparency .</li>
         </ul>
     </div>
 
     <div class="goals-box">
         <h3>Empowering Students with Holistic Development</h3>
-        <p>🎯 <strong>Goal:</strong> Support students <strong>academically, socially, and emotionally</strong>.</p>
+        <p>🎯  Goal:  Support students  academically, socially, and emotionally .</p>
         <ul>
-            <li>✅ Establish a <strong>Systematic Student Support System</strong> by 2024.</li>
-            <li>✅ Introduce <strong>mental health & counseling programs</strong> for student well-being.</li>
-            <li>✅ Provide <strong>career guidance, leadership training, and extracurricular activities</strong>.</li>
+            <li> Establish a  Systematic Student Support System  by 2024.</li>
+            <li> Introduce  mental health & counseling programs  for student well-being.</li>
+            <li> Provide  career guidance, leadership training, and extracurricular activities .</li>
         </ul>
     </div>
 </section>
